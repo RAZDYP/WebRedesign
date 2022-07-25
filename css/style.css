@@ -268,6 +268,7 @@ p {
 
 .padding-top-big {
 	padding-top: 110px;
+	padding-bottom: 20px;
 }
 
 .padding-bottom-big {
@@ -1090,6 +1091,25 @@ ul.countdown li p {
 	margin-top: 15px;
 }
 
+.political_background{
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.pricing_background{
+	background-image: linear-gradient(to right, #051937, #00476d, #007c9d, #00b3bf, #46ecd2);
+
+}
+.about_us_background{
+	background-image: linear-gradient(to right, #d36b3d, #e3586b, #d8579f, #ab6bcf, #4682ec);
+}
+
+.contact_background{
+	background-image: linear-gradient(to right, #e92662, #f45929, #dd9000, #a6bf00, #1ce647);
+}
+.tradeshow_background{
+	background-image: linear-gradient(to right, #efa8be, #e87ab7, #d14dbf, #a424d2, #371ceb);
+}
 /* #Pages
 ================================================== */
 /* #Speakers
@@ -1923,4 +1943,108 @@ ul.countdown li p {
 	.location-fixed {
 		display: none;
 	}
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(7px);
+	width: 90%;
+	padding: 10px;
+	border: none;
+	border-radius: 1rem;
+	transition: all 0.2s;
+	box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+hr {
+	margin: 1.5rem 0;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-title {
+	color: white;
+	margin: 0.5rem 0;
+	font-size: 20px;
+	letter-spacing: .1rem;
+	font-weight: bold;
+}
+
+.card-price {
+	font-size: 80px;
+	margin: 0;
+}
+
+.card-credits {
+	/* margin-top: 10px; */
+	margin-bottom: 20px;
+	font-size: 16px;
+	letter-spacing: .1rem;
+	text-transform: lowercase;
+	font-weight: 200;
+}
+
+.card-support {
+	font-size: 18px;
+}
+
+.buy-button {
+	/* background-color: brown; */
+	margin-top: 20px;
+	margin-bottom: 5px;
+	height: 40%;
+	width: 80%;
+	font-size: 25px;
+	border-radius: 20px;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	padding: 1rem;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+
+.card-bill {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	letter-spacing: .1rem;
+}
+
+.card-body h4 {
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	letter-spacing: .1rem;
+	font-weight: 800;
+}
+
+.best-seller {
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	letter-spacing: .1rem;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+	.card:hover {
+		transition: transform 0.3s;
+		transform: scale(1.05);
+	}
+
+	.card:hover .btn {
+		opacity: 1;
+	}
+}
+
+.discovery-page {
+	margin-bottom: 100px;
 }
