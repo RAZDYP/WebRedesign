@@ -26,5 +26,34 @@ switcher.addEventListener("click", function () {
     monthlySwitch.classList.toggle("toggler--is-active");
     monthlyCard.classList.toggle("hide");
     yearlyCard.classList.toggle("hide");
-    console.log(yearlyCard);
 });
+
+// For HomePage Subscribe Dropdown
+var switchTitleMonthly = document.getElementById("toggle-switch-monthly"),
+    switchTitleYearly = document.getElementById("toggle-switch-yearly"),
+    dropdownSwitch = document.getElementById("toggle-dropdown-switch"),
+    switchMonthlyInfo = document.getElementById("toggle-switch-monthly-info"),
+    switchYearlyInfo = document.getElementById("toggle-switch-yearly-info");
+
+switchTitleMonthly.addEventListener("click", function () {
+    dropdownSwitch.checked = false;
+    switchTitleMonthly.classList.add("toggle-title-dropdown--active");
+    switchTitleYearly.classList.remove("toggle-title-dropdown--active");
+    switchMonthlyInfo.classList.remove("hide");
+    switchYearlyInfo.classList.add("hide");
+})
+
+switchTitleYearly.addEventListener("click", function () {
+    dropdownSwitch.checked = true;
+    switchTitleYearly.classList.add("toggle-title-dropdown--active");
+    switchTitleMonthly.classList.remove("toggle-title-dropdown--active");
+    switchMonthlyInfo.classList.add("hide");
+    switchYearlyInfo.classList.remove("hide");
+})
+
+dropdownSwitch.addEventListener("click", function () {
+    switchTitleMonthly.classList.toggle("toggle-title-dropdown--active")
+    switchTitleYearly.classList.toggle("toggle-title-dropdown--active")
+    switchMonthlyInfo.classList.toggle("hide")
+    switchYearlyInfo.classList.toggle("hide")
+})
