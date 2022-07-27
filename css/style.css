@@ -289,17 +289,10 @@ p {
 }
 
 .btn-funky-moon {
-	background: #A770EF;
-	/* fallback for old browsers */
-	background: -webkit-linear-gradient(145deg, #FDB99B, #CF8BF3, #A770EF);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(145deg, #FDB99B, #CF8BF3, #A770EF);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 1px;
+	background: linear-gradient(45deg, #0947db, #07d89d);
+	box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
 	color: #fff;
-	border: 3px solid #eee;
-	border-radius: 35px;
-
-
 }
 
 .ticket-button {
@@ -312,6 +305,7 @@ p {
 }
 
 .call-button {
+	margin-top: 20px;
 	border-radius: 3px;
 	background: linear-gradient(45deg, #0947db, #07d89d);
 	box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
@@ -400,7 +394,7 @@ p {
 	top: 70px !important;
 	left: auto !important;
 	right: 30px;
-	background-image: linear-gradient(to right, #041839, #002464, #002e91, #0035bd, #3a36e8);
+	background-color: #212121;
 	border: 1px solid transparent !important;
 	border-radius: 15px;
 	width: 200px;
