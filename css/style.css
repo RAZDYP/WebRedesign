@@ -319,6 +319,8 @@ p {
 	padding: 10px;
 }
 
+.tu
+
 #ticket-wrap p {
 	color: #fff;
 	letter-spacing: 1px;
@@ -420,6 +422,39 @@ p {
 	height: 70px;
 	width: 190px;
 	margin-bottom: 10px;
+}
+
+.login--test {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 22px;
+	right: 200px;
+	z-index: 3002;
+	height: 36px;
+	line-height: 36px;
+	color: white;
+	column-gap: 20px;
+}
+
+.login-button {
+	background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+	
+}
+
+.test-drive-button {
+	background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 a.ticket-link .pulse {
@@ -705,9 +740,20 @@ a:focus {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('../img/corporate-businessman-giving-presentation-large-audience-02.jpeg');
+	background-image: url('../img/stock-photo-moscow-russia-march-people-attend-business-conference-in-large-congress-hall-1358566394\ \(1\).jpg');
 	opacity: 1;
+	
 	/* z-index: -2; */
+}
+
+#myVideo {
+	position: fixed;
+	object-fit: cover;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
 }
 
 
@@ -1058,28 +1104,42 @@ main {
 
 .event-time {
 	position: absolute;
-	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	z-index: 4;
 	top: 45%;
-	left: 50%;
+	left:55%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .hero-main-title {
+	padding-left: 5px;
 	position: relative;
 	width: 100%;
 	max-width: 440px;
 	display: block;
 	text-align: center;
-	font-size: 42px;
+	font-size: 45px;
 	line-height: 1.25;
 	letter-spacing: 2px;
-	font-weight: 600;
-	color: #fff;
-	z-index: 1;
-	margin-bottom: 40px;
+	font-weight: 300;
+	color: white;
+	
+	margin-bottom: 20px;
+	/* font-family: 'Tangerine', serif; */
+	font-family: 'Permanent Marker', cursive;
+
+	
+    
+	
+	
+
+	
+	
 }
+
 
 .main_video {
 	position: relative;
@@ -1095,6 +1155,21 @@ main {
 	justify-content: center;
 	/* align-self: center;
 	align-items: center; */
+}
+
+.caption-below-youtube{
+	margin-top: 30px;
+	/* padding-left: 30px; */ 
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5em; ;
+	color:white;
+	max-width: 450px;
+	
 }
 
 /* .main_video {
@@ -2287,7 +2362,7 @@ hr {
 }
 
 .toggle-title-dropdown--active {
-	color: red;
+	color: white;
 }
 
 .toggle-dropdown {
@@ -2295,7 +2370,7 @@ hr {
 	width: 40px;
 	height: 25px;
 	border-radius: 100px;
-	background-color: #9D1726;
+	background-color: grey;
 	overflow: hidden;
 	box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
 }
@@ -2338,3 +2413,4 @@ hr {
 .discovery-page {
 	margin-bottom: 100px;
 }
+
