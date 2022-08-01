@@ -304,11 +304,16 @@ p {
 	box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
+.call-info {;
+	text-align: center;
+}
+
 .call-button {
-	margin-top: 20px;
+	margin-top: 40px;
 	border-radius: 3px;
 	background: linear-gradient(45deg, #0947db, #07d89d);
 	box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
+	/* float: center; */
 }
 
 /* #Popover
@@ -2547,7 +2552,7 @@ hr {
 }
 
 .card-popular {
-	/* margin: 20px; */
+	transform: scale(1.1);
 }
 
 .card-title {
@@ -2628,7 +2633,7 @@ hr {
 }
 
 .pricing-switch {
-	margin-top: 30px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2769,6 +2774,16 @@ hr {
 
 .discovery-page {
 	margin-bottom: 100px;
+}
+
+.calendly-inline-widget {
+	/* background-color: transparent; */
+	height: 900px;
+	overflow: hidden;
+}
+
+.meeting-book {
+	margin-top: 80px;
 }
 
 .casestudy-download-button {
