@@ -2778,12 +2778,17 @@ hr {
 
 .calendly-inline-widget {
 	/* background-color: transparent; */
+	margin-top: -50px;
 	height: 900px;
 	overflow: hidden;
 }
 
 .meeting-book {
 	margin-top: 80px;
+}
+
+.casestudy-video-frame {
+	text-align: center;
 }
 
 .casestudy-download-button {
@@ -2815,7 +2820,7 @@ hr {
 }
 
 .casestudy-info p {
-	width: 80%;
+	width: 70%;
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: .1rem;
