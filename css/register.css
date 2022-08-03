@@ -32,7 +32,12 @@ body {
 
 .register-description h1 {
     font-size: 62px;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.register-description--subheader {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .register-description p {
