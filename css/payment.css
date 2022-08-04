@@ -65,7 +65,7 @@ body {
     height: 100vh;
     padding: 20px;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     row-gap: 15px;
 }
@@ -97,6 +97,10 @@ body {
     border-radius: 10px;
     padding: 20px;
     outline: none;
+}
+
+.secure-payment--info--input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .secure-payment--info--input--security {
