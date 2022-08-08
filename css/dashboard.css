@@ -4,6 +4,7 @@ body {
 
 .container-fluid {
     margin-top: 30px;
+<<<<<<< HEAD
 }
 
 .dashboard-navbaar--logo {
@@ -15,4 +16,6 @@ body {
 .dashboard-content--cards {
     background-color: white;
     padding: 10px;
+=======
+>>>>>>> 9b070df641ff55cacc42d8db544e2f69730ed768
 }
