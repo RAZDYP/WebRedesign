@@ -190,14 +190,52 @@
                                             <p> Groups</p>
                                         </div>
                                         <div class="receivers-list-radio-checklist">
-                                            <input type="radio" value="contacts" name="receivers-list--buttons" style="color: black;">
+                                            <input type="radio" id="contacts" value="contacts" name="receivers-list--buttons" style="color: black;">
                                             <p> Contacts</p>
                                         </div>
                                         <div class="receivers-list-radio-checklist">
-                                            <input type="radio" value="manual" name="receivers-list--buttons" style="color: black;">
+                                            <input type="radio" id="manual" value="manual" name="receivers-list--buttons" style="color: black;">
                                             <p> Manual</p>
                                         </div>
 
+                                    </div>
+                                </div>
+                                <div class="message-groups">
+                                    <div class="message-groups--filter">
+                                        <div class="message-groups--filter--city">
+                                            <p style="font-weight: 600;">City</p>
+                                            <input type="text" placeholder="Enter City" />
+                                        </div>
+                                        <div class="message-groups--filter--state">
+                                            <p style="font-weight: 600;">State</p>
+                                            <input type="text" placeholder="Enter State" />
+                                        </div>
+                                        <div class="message-groups--filter--postal">
+                                            <p style="font-weight: 600;">Postal Code</p>
+                                            <input type="text" placeholder="Enter Postal Code" />
+                                        </div>
+                                        <div class="message-groups--filter--delivery">
+                                            <p style="font-weight: 600;">Postal Code</p>
+                                        <input type="datetime-local" placeholder="Enter A Date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-contacts hide" id="message-contacts">
+                                    <div class="message-contacts--number">
+                                        <p>Name | Group Name | Phone Number</p>
+                                        <select>
+                                            <option>123456789</option>
+                                        </select>
+                                    </div>
+                                    <div class="message-contacts--delivery">
+                                        <p>Schedule Delivery</p>
+                                        <input type="datetime-local" placeholder="Enter A Date">
+                                    </div>
+                                </div>
+                                <div class="message-manual hide" id="message-manual">
+                                    <div class="message-manual--number">
+                                        <p>Phone Number</p>
+                                        <textarea rows="3" cols="50" placeholder="Please use country code with number"></textarea>
                                     </div>
                                 </div>
                                 <div class="message-template">
@@ -346,6 +384,7 @@
             </div>
 
             <script src="../js/graph.js"></script>
+            <script src="../js/pick.js"></script>
             <script src="../js/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

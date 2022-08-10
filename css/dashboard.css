@@ -336,6 +336,54 @@ margin-bottom: 0px;
     margin-bottom: 0px;
 }
 
+.message-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 85%;
+    row-gap: 15px;
+}
+
+.message-contacts--number {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-contacts--delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-manual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    row-gap: 15px;
+}
+
+.message-manual--phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message-groups--filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    row-gap: 15px;
+}
+
 .message-template{
     width: 85%;
     display: flex;
@@ -567,4 +615,8 @@ width: 30%;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .hide {
+    display: none;
   }
