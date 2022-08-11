@@ -174,3 +174,18 @@ body {
 	-webkit-transition-delay: 0.315s;
 	transition-delay: 0.30s;
 }
+
+.login-info--link {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-info--link p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}

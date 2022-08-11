@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/jquery.webui-popover.css" />
     <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/modals.css" />
 
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
@@ -139,7 +140,7 @@
                         <a href="">Create Group</a>
                         <a href="">Import Contacts</a>
                         <div></div> -->
-                        <button>Create Group</button>
+                        <button data-bs-toggle="modal" data-bs-target="#myModal">Create Group</button>
                         <button>Get New Number</button>
                         <button>Import Contacts</button>
 
@@ -382,6 +383,96 @@
                     </div> -->
                 </div>
             </div>
+
+            <!-- Modals -->
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-group--header">
+                                <div class="modal-group--header--title">
+                                    <img src="../img/delievered.png" width="20%" height="20%"/>
+                                    <p style="font-weight: 600;">Create Group Form</p>
+                                </div>
+                            </div>
+                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-group--body">
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Copy Members From Existing Group</p>
+                                    <select>
+                                        <option>Please select A Group</option>
+                                    </select>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Enter Group Name</p>
+                                    <input type="text" placeholder="Group Name" />
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Keyword</p>
+                                    <input type="text" placeholder="Keyword" />
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Group Type</p>
+                                    <select>
+                                        <option>Please Select A Group Type</option>
+                                    </select>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Birthday</p>
+                                    <div class="modal-group--body--field--switch">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Message</p>
+                                    <textarea rows="4" cols="70"></textarea>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Mandatory Appended Message</p>
+                                    <textarea rows="4" cols="70"></textarea>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">If Member Message</p>
+                                    <textarea rows="4" cols="70"></textarea>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Double Opt-In</p>
+                                    <div class="modal-group--body--field--switch">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-group--body--field">
+                                    <p style="font-weight: 600;">Notify Sign-Up</p>
+                                    <div class="modal-group--body--field--switch">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal-group--footer--submit">
+                                <button>Submit</button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals END -->
 
             <script src="../js/graph.js"></script>
             <script src="../js/pick.js"></script>
