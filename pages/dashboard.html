@@ -187,38 +187,42 @@
                                     <p style="font-weight: 600;">Pick Receivers List</p>
                                     <div class="receivers-list-radio">
                                         <div class="receivers-list-radio-checklist">
-                                            <input type="radio" value="groups" name="receivers-list--buttons" style="color: black;">
+                                            <input type="radio" id="groups" value="groups"
+                                                name="receivers-list--buttons" style="color: black;">
                                             <p> Groups</p>
                                         </div>
                                         <div class="receivers-list-radio-checklist">
-                                            <input type="radio" id="contacts" value="contacts" name="receivers-list--buttons" style="color: black;">
+                                            <input type="radio" id="contacts" value="contacts"
+                                                name="receivers-list--buttons" style="color: black;">
                                             <p> Contacts</p>
                                         </div>
                                         <div class="receivers-list-radio-checklist">
-                                            <input type="radio" id="manual" value="manual" name="receivers-list--buttons" style="color: black;">
+                                            <input type="radio" id="manual" value="manual"
+                                                name="receivers-list--buttons" style="color: black;">
                                             <p> Manual</p>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="message-groups">
-                                    <div class="message-groups--filter">
-                                        <div class="message-groups--filter--city">
-                                            <p style="font-weight: 600;">City</p>
-                                            <input type="text" placeholder="Enter City" />
-                                        </div>
-                                        <div class="message-groups--filter--state">
-                                            <p style="font-weight: 600;">State</p>
-                                            <input type="text" placeholder="Enter State" />
-                                        </div>
-                                        <div class="message-groups--filter--postal">
-                                            <p style="font-weight: 600;">Postal Code</p>
-                                            <input type="text" placeholder="Enter Postal Code" />
-                                        </div>
-                                        <div class="message-groups--filter--delivery">
-                                            <p style="font-weight: 600;">Postal Code</p>
+                                <div class="message-groups hide" id="message-groups">
+                                    <div class="message-groups--filter--title">
+                                        <h3>Location Filters</h3>
+                                    </div>
+                                    <div class="message-groups--filter--city">
+                                        <p style="font-weight: 600;">City</p>
+                                        <input type="text" placeholder="Enter City" />
+                                    </div>
+                                    <div class="message-groups--filter--state">
+                                        <p style="font-weight: 600;">State</p>
+                                        <input type="text" placeholder="Enter State" />
+                                    </div>
+                                    <div class="message-groups--filter--postal">
+                                        <p style="font-weight: 600;">Postal Code</p>
+                                        <input type="text" placeholder="Enter Postal Code" />
+                                    </div>
+                                    <div class="message-groups--filter--delivery">
+                                        <p style="font-weight: 600;">Schedule Delivery</p>
                                         <input type="datetime-local" placeholder="Enter A Date">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="message-contacts hide" id="message-contacts">
@@ -236,7 +240,8 @@
                                 <div class="message-manual hide" id="message-manual">
                                     <div class="message-manual--number">
                                         <p>Phone Number</p>
-                                        <textarea rows="3" cols="50" placeholder="Please use country code with number"></textarea>
+                                        <textarea rows="3" cols="50"
+                                            placeholder="Please use country code with number"></textarea>
                                     </div>
                                 </div>
                                 <div class="message-template">
@@ -393,7 +398,7 @@
                         <div class="modal-header">
                             <div class="modal-group--header">
                                 <div class="modal-group--header--title">
-                                    <img src="../img/delievered.png" width="20%" height="20%"/>
+                                    <img src="../img/delievered.png" width="20%" height="20%" />
                                     <p style="font-weight: 600;">Create Group Form</p>
                                 </div>
                             </div>
@@ -473,52 +478,55 @@
             <div id="myModal2" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <div class="modal-import--header">
-                            <div class="modal-import--header--title">
-                                <img src="../img/delievered.png" width="20%" height="20%"/>
-                                <p style="font-weight: 600;">Import Contacts</p>
-                            </div>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="modal-import--body">
-                            <div class="modal-import--body--upload">
-                                <p style="font-weight: 600;">CSV Contacts File To Upload</p>
-                                <div class="modal-import--body--upload--file">
-                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
-                                    <label for="img">Pick File</label>
+                        <div class="modal-header">
+                            <div class="modal-import--header">
+                                <div class="modal-import--header--title">
+                                    <img src="../img/delievered.png" width="20%" height="20%" />
+                                    <p style="font-weight: 600;">Import Contacts</p>
                                 </div>
                             </div>
-                            <div class="modal-import--body--info">
-                                <p>Please upload CSV file only. NO spaces, dashes, or parentheses in phone numbers</p>
-                            </div>
-                            <div class="modal-import--body--important">
-                                <p>
-                                    IMPORTANT<br>The 1st row of the file should be a column header row. 
-                                    This is how you will map the CSV columns sto the contact fields on the next page.
-                                    If you have a large list (>25000). It's recommended to split your file int multiple
-                                    csv files and import those into seperate groups.
-                                </p>
-                            </div>
-                            <div class="modal-import--body--declaration">
-                                <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
-                                <div class="modal-group--body--field--switch">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-import--body">
+                                <div class="modal-import--body--upload">
+                                    <p style="font-weight: 600;">CSV Contacts File To Upload</p>
+                                    <div class="modal-import--body--upload--file">
+                                        <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                        <label for="img">Pick File</label>
+                                    </div>
+                                </div>
+                                <div class="modal-import--body--info">
+                                    <p>Please upload CSV file only. NO spaces, dashes, or parentheses in phone numbers
+                                    </p>
+                                </div>
+                                <div class="modal-import--body--important">
+                                    <p>
+                                        IMPORTANT<br>The 1st row of the file should be a column header row.
+                                        This is how you will map the CSV columns sto the contact fields on the next
+                                        page.
+                                        If you have a large list (>25000). It's recommended to split your file int
+                                        multiple
+                                        csv files and import those into seperate groups.
+                                    </p>
+                                </div>
+                                <div class="modal-import--body--declaration">
+                                    <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
+                                    <div class="modal-group--body--field--switch">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                      </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <!-- Modals END -->
