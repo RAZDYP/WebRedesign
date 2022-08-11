@@ -1,0 +1,255 @@
+.modal-group,
+.modal-import {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    position: relative;
+    left: 25%;
+    row-gap: 20px;
+    padding: 30px;
+}
+
+.modal-group--header,
+.modal-import--header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-group--header--title,
+.modal-import--header--title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.modal-group--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    row-gap: 10px;
+}
+
+.modal-group--body--field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    column-gap: 30px;
+}
+
+.modal-group--body--field input,
+.modal-group--body--field textarea,
+.modal-group--body--field select {
+    box-sizing: border-box;
+    width: 40%;
+}
+
+.modal-import--body--upload input,
+.modal-import--body--upload label {
+    box-sizing: border-box;
+    /* width: 40%; */
+}
+
+.modal-group--footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-group--footer--submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-group--body--field select {
+    border-radius: 7px;
+    padding: 3px;
+}
+
+.modal-group--body--field textarea {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.modal-group--body--field input {
+    background-color: #E9E9E9;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: rgb(230, 33, 33);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.modal-group--body--field--switch {
+    width: 40%;
+}
+
+.modal-group--footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-group--footer--submit button {
+    background-color: rgb(35, 154, 35);
+    width: 100px;
+    height: 30px; 
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.modal-import--body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    row-gap: 10px;
+}
+
+.modal-import--body--upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 80%;
+    column-gap: 20px;
+}
+
+.modal-import--body--upload--file {
+    background-color: black;
+    color: white;
+    padding: 5px 7px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-import--body--upload--file label {
+    cursor: pointer;
+}
+
+.modal-import--body--info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.modal-import--body--info p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.modal-import--body--important {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background-color: rgb(249, 125, 125);
+    border-radius: 10px;
+}
+
+.modal-import--body--important p {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.modal-import--body--declaration {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    column-gap: 20px;
+}
+
+.modal-import--footer--submit button {
+    background-color: rgb(35, 154, 35);
+    width: 100px;
+    height: 30px; 
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}

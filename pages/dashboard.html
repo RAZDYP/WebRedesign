@@ -140,8 +140,8 @@
                         <a href="">Create Group</a>
                         <a href="">Import Contacts</a>
                         <div></div> -->
-                        <button data-bs-toggle="modal" data-bs-target="#myModal">Create Group</button>
-                        <button>Get New Number</button>
+                        <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
+                        <button data-bs-toggle="modal" data-bs-target="#myModal2">Get New Number</button>
                         <button>Import Contacts</button>
 
                     </div>
@@ -386,7 +386,7 @@
 
             <!-- Modals -->
 
-            <div id="myModal" class="modal fade" role="dialog">
+            <div id="myModal1" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -463,13 +463,62 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <div class="modal-group--footer--submit">
-                                <button>Submit</button>
-                            </div>
-                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="myModal2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-import--header">
+                            <div class="modal-import--header--title">
+                                <img src="../img/delievered.png" width="20%" height="20%"/>
+                                <p style="font-weight: 600;">Import Contacts</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="modal-import--body">
+                            <div class="modal-import--body--upload">
+                                <p style="font-weight: 600;">CSV Contacts File To Upload</p>
+                                <div class="modal-import--body--upload--file">
+                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                    <label for="img">Pick File</label>
+                                </div>
+                            </div>
+                            <div class="modal-import--body--info">
+                                <p>Please upload CSV file only. NO spaces, dashes, or parentheses in phone numbers</p>
+                            </div>
+                            <div class="modal-import--body--important">
+                                <p>
+                                    IMPORTANT<br>The 1st row of the file should be a column header row. 
+                                    This is how you will map the CSV columns sto the contact fields on the next page.
+                                    If you have a large list (>25000). It's recommended to split your file int multiple
+                                    csv files and import those into seperate groups.
+                                </p>
+                            </div>
+                            <div class="modal-import--body--declaration">
+                                <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
+                                <div class="modal-group--body--field--switch">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
             <!-- Modals END -->
