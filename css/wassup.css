@@ -4,7 +4,7 @@
     
     #chat3 .form-control:focus {
     border-color: transparent;
-    box-shadow: inset 0px 0px 0px 1px transparent;
+    box-shadow: inset 0px 0px 0px 0px;
     }
     
     .badge-dot {
@@ -752,10 +752,11 @@
         align-items: center;
         width: 90%;
         height: 100%;
-        row-gap: 50px;
+        row-gap: 40px;
         background-color: #F2F2F2;
         margin-right: 30px;
         border-radius: 30px;
+       
     }
     
     .chatbox-content--navbar{
@@ -817,7 +818,7 @@
        background-color: #e6e6e6;
        margin-right: 30px;
        margin-left: 30px;
-       padding: 30px;
+       padding: 0px;
        border-radius: 30px;
     }
     
@@ -871,9 +872,13 @@
         padding: 20px;
         
     }
+    .card-body-main{
+        background-color: #2196F3;
+    }
     
     .card-body{
-        background-color: #E6E6E6;
+        
+        border: none;
         padding-left: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
@@ -887,6 +892,7 @@
         padding-right: 0px;
         /* background-color: white; */
         border: none;
+        background-color: blue;
         
     }
     
@@ -906,11 +912,13 @@
 
     #chat2 .form-control {
         border-color: transparent;
+        border: none;
         }
         
         #chat2 .form-control:focus {
         border-color: transparent;
-        box-shadow: inset 0px 0px 0px 1px transparent;
+        box-shadow: inset 0px 0px 0px 0px;
+        border: none;
         }
         
         .divider:after,
@@ -920,3 +928,7 @@
         height: 1px;
         background: #eee;
         }
+
+
+  
+    
