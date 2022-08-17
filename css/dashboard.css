@@ -81,6 +81,16 @@ body {
     row-gap: 50px;
 }
 
+.dashboard-content--dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    row-gap: 50px;
+}
+
 .dashboard-content--cards {
     display: flex;
     flex-direction: column;
@@ -652,19 +662,16 @@ width: 30%;
     padding-bottom: 5px;
   }
 
-  .hide {
-    display: none;
-  }
-
-
-
   /* Chatbox css */
 
-  body {
-    /* background-color: #ECECEE; */
-    /* background-color: #E6e6e6; */
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+.dashboard-content--chatbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    row-gap: 50px;
 }
 
 .chatbox {
@@ -674,57 +681,6 @@ width: 30%;
     padding-left: 0;
     background-color: #E6E6E6;
     column-gap: 30px;
-}
-
-.chatbox-navbaar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: max-content;
-    row-gap: 25px;
-    position: static;
-
-}
-
-.chatbox-navbaar--icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-color: white;
-    border-radius: 0 30px 30px 0;
-    width: 100%;
-}
-
-.chatbox-navbaar--links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-    width: 100%;
-    background-color: white;
-    border-radius: 0 30px 30px 0;
-    padding-top: 20px;
-    row-gap: 10px;
-}
-
-.chatbox-navbaar--links--dashboard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.chatbox-navbaar--links--messages {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    column-gap: 15px;
 }
 
 .chatbox-content {
@@ -795,12 +751,12 @@ width: 30%;
 .chatbox-content-body{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-   background-color: #e6e6e6;
-   margin-right: 30px;
-   margin-left: 30px;
-   padding: 30px;
-   border-radius: 30px;
+    justify-content: center;
+    background-color: #e6e6e6;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 30px;
+    border-radius: 30px;
 }
 
 .chatbox-content-body-main{
@@ -882,6 +838,10 @@ width: 30%;
     background-color: white;
     border-radius: 20px;
 }
+
+.hide {
+    display: none;
+  }
 
 
 

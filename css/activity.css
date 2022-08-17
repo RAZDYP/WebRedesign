@@ -22,20 +22,29 @@
 
 .activity-navbar--number {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
+    flex: row;
+    column-gap: 10px;
     width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding: 8px;
+    margin-left: 10px;
+    height: 60px;
 }
 
 .activity-navbar--number p {
     width: 30%;
     margin: 0;
+    padding-left: 8px;
 }
 
-.activity-navbar--number input {
+.activity-navbar--number select {
     width: 60%;
+    border: none;
+    border-radius: 13px;
+    padding: 6px;
 }
 
 .activity-navbar--icons {
@@ -45,6 +54,9 @@
     align-items: center;
     column-gap: 15px;
     width: 70%;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    height: 60px;
 }
 
 .activity-body {
@@ -52,33 +64,141 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
     row-gap: 20px;
 }
 
-.activity-body--header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 15px;
-    width: 80%;
-}
-
-.activity-body--content {
+.activity-search {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    row-gap: 20px;
+    row-gap: 15px;
+    width: 100%;
+    background-color: #e6e6e6;
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px;
 }
 
-.activity-body--content--row {
+.activity-search--header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     column-gap: 15px;
+    width: 100%;
+}
+
+.activity-search--input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 15px; */
+    row-gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.activity-search--input > * {
+    flex: 0 0 33.33%;
+}
+
+.activity-search--input--field {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing:0 20px;
+}
+
+.activity-search--input--field input,
+.activity-search--input--field select {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.activity-search--buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.activity-search--buttons--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
+
+.activity-search--buttons--button button {
+    width: 15%;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: green;
+    color: #fff;
+}
+
+.activity-search-buttons--records {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 12px;
+    width: 15%;
+}
+
+.activity-search-buttons--records select {
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.activity-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    width: 100%;
+    border-radius: 13px;
+    padding-top:20px ;
+}
+
+.activity-table table {
+    width: 80%;
+}
+
+.activity-table--actions--header {
+    width: 100px;
+}
+
+.activity-table--actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: 5px;
+    /* width: 20%; */
+    margin: 0;
+}
+
+.activity-table > tbody > tr {
+    margin: 20px;
+}
+

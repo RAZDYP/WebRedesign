@@ -48,503 +48,258 @@
                     <img src="../img/received.png" width="50%" height="50%" " />
                     <h5>Messagees</h5>
                 </div>
-                
             </div>
         </div>
-
-        <!-- MAIN DASHBOARD CONTENT -->
-
-        
-         <div class=" dashboard-content">
-                    <div class="dashboard-content--cards">
-                        <div class="dashboard-content--cards--rows--1">
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/received.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Received</p>
-                                        <p style="color:green; font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart2" width="275%" height="75%"></canvas>
+        <div class="dashboard-content">
+            <div class="dashboard-content--dashboard">
+                <div class="dashboard-content--cards">
+                    <div class="dashboard-content--cards--rows--1">
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/received.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Received</p>
+                                    <p style="color:green; font-weight: 700;">100000</p>
                                 </div>
                             </div>
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/received.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Received</p>
-                                        <p style="color:green; font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart2" width="275%" height="75%"></canvas>
-                                </div>
-                            </div>
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/delievered.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Delievered</p>
-                                        <p style="color:green; font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart3" width="275%" height="75%"></canvas>
-                                </div>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart1" width="275%" height="75%"></canvas>
                             </div>
                         </div>
-
-                        <div class="dashboard-content--cards--rows--1">
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/failed.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Failed</p>
-                                        <p style="color:red; font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart4" width="275%" height="75%"></canvas>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/received.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Received</p>
+                                    <p style="color:green; font-weight: 700;">100000</p>
                                 </div>
                             </div>
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/queued.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Queued</p>
-                                        <p style="color: yellow; font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart5" width="275%" height="75%"></canvas>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart2" width="275%" height="75%"></canvas>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/delievered.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Delievered</p>
+                                    <p style="color:green; font-weight: 700;">100000</p>
                                 </div>
                             </div>
-                            <div class="dashboard-card">
-                                <div class="dashboard-card--info">
-                                    <img src="../img/read.png" width="20%" height="20%" />
-                                    <div class="dashboard-card--info--amount">
-                                        <p>Read</p>
-                                        <p style="color:rgba(58, 58, 249, 0.864); font-weight: 700;">100000</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard-card--graph">
-                                    <canvas id="myChart6" width="275%" height="75%"></canvas>
-                                </div>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart3" width="275%" height="75%"></canvas>
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- SECOND SECTION OF THE CONTENT PART  -->
-
-                    <div class="dashboard-content-section-2">
-                        <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
-                        <button>Get New Number</button>
-                        <button data-bs-toggle="modal" data-bs-target="#myModal2">Import Contacts</button>
-
-                    </div>
-
-                    <div class="dashboard-content-section-3">
-                        <div class="dashboard-content-section-3-navbar">
-                            <div class="send-message-from">
-                                <div class="send-message-from-with-icon">
-                                    <img src="../img/delievered.png" />
-                                    <p style="font-weight: 600;">Send message from</p>
+                    <div class="dashboard-content--cards--rows--1">
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/failed.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Failed</p>
+                                    <p style="color:red; font-weight: 700;">100000</p>
                                 </div>
+                            </div>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart4" width="275%" height="75%"></canvas>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/queued.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Queued</p>
+                                    <p style="color: yellow; font-weight: 700;">100000</p>
+                                </div>
+                            </div>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart5" width="275%" height="75%"></canvas>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card--info">
+                                <img src="../img/read.png" width="20%" height="20%" />
+                                <div class="dashboard-card--info--amount">
+                                    <p>Read</p>
+                                    <p style="color:rgba(58, 58, 249, 0.864); font-weight: 700;">100000</p>
+                                </div>
+                            </div>
+                            <div class="dashboard-card--graph">
+                                <canvas id="myChart6" width="275%" height="75%"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content-section-2">
+                    <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
+                    <button data-bs-toggle="modal" data-bs-target="#myModal2">Get New Number</button>
+                    <button data-bs-toggle="modal" data-bs-target="#myModal3">Import Contacts</button>
+                </div>
+                <div class="dashboard-content-section-3">
+                    <div class="dashboard-content-section-3-navbar">
+                        <div class="send-message-from">
+                            <div class="send-message-from-with-icon">
+                                <img src="../img/delievered.png" />
+                                <p style="font-weight: 600;">Send message from</p>
+                            </div>
+                            <select> Select one
+                                <option>1234567890</option>
+                            </select>
+                        </div>
+                        <div class="credits-needed">
+                            <div class="credits-needed-with-icon">
+                                <img src="../img/delievered.png" />
+                                <p style="font-weight: 600;">Credits Needed</p>
+                            </div>
+                            <p style="font-weight: 600;">123</p>
+                        </div>
+                        <div class="local-time">
+                            <div class="local-time-with-icon">
+                                <img src="../img/delievered.png" />
+                                <p style="font-weight: 600;">Local Time </p>
+                            </div>
+                            <p style="font-weight: 600;"> 2022-08-07 01:39:01 PM</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-content-section-3-body">
+                        <div class="dashboard-content-section-3-body-left">
+                            <div class="sender-id">
+                                <p> Send from alphanumeric Sender ID</p>
+                                <input type="checkbox" style="color: black;">
+                                <img src="../img/clipart447365.png" width="3%" height="100%" />
+                            </div>
+                            <div class="receivers-list">
+                                <p style="font-weight: 600;">Pick Receivers List</p>
+                                <div class="receivers-list-radio">
+                                    <div class="receivers-list-radio-checklist">
+                                        <input type="radio" id="groups" value="groups"
+                                            name="receivers-list--buttons" style="color: black;">
+                                        <p> Groups</p>
+                                    </div>
+                                    <div class="receivers-list-radio-checklist">
+                                        <input type="radio" id="contacts" value="contacts"
+                                            name="receivers-list--buttons" style="color: black;">
+                                        <p> Contacts</p>
+                                    </div>
+                                    <div class="receivers-list-radio-checklist">
+                                        <input type="radio" id="manual" value="manual"
+                                            name="receivers-list--buttons" style="color: black;">
+                                        <p> Manual</p>
+                                    </div>
 
-                                <select> Select one
-                                    <option>1234567890</option>
+                                </div>
+                            </div>
+                            <div class="message-groups hide" id="message-groups">
+                                <div class="message-groups--filter--title">
+                                    <h3>Location Filters</h3>
+                                </div>
+                                <div class="message-groups--filter--city">
+                                    <p style="font-weight: 600;">City</p>
+                                    <input type="text" placeholder="Enter City" />
+                                </div>
+                                <div class="message-groups--filter--state">
+                                    <p style="font-weight: 600;">State</p>
+                                    <input type="text" placeholder="Enter State" />
+                                </div>
+                                <div class="message-groups--filter--postal">
+                                    <p style="font-weight: 600;">Postal Code</p>
+                                    <input type="text" placeholder="Enter Postal Code" />
+                                </div>
+                                <div class="message-groups--filter--delivery">
+                                    <p style="font-weight: 600;">Schedule Delivery</p>
+                                    <input type="datetime-local" placeholder="Enter A Date">
+                                </div>
+                            </div>
+                            <div class="message-contacts hide" id="message-contacts">
+                                <div class="message-contacts--number">
+                                    <p>Name | Group Name | Phone Number</p>
+                                    <select>
+                                        <option>123456789</option>
+                                    </select>
+                                </div>
+                                <div class="message-contacts--delivery">
+                                    <p>Schedule Delivery</p>
+                                    <input type="datetime-local" placeholder="Enter A Date">
+                                </div>
+                            </div>
+                            <div class="message-manual hide" id="message-manual">
+                                <div class="message-manual--number">
+                                    <p>Phone Number</p>
+                                    <textarea rows="3" cols="50"
+                                        placeholder="Please use country code with number"></textarea>
+                                </div>
+                            </div>
+                            <div class="message-template">
+                                <p>Message Template</p>
+                                <select>
+                                    <option>123456789</option>
                                 </select>
 
                             </div>
-                            <div class="credits-needed">
-                                <div class="credits-needed-with-icon">
-                                    <img src="../img/delievered.png" />
-                                    <p style="font-weight: 600;">Credits Needed</p>
-                                </div>
+                            <div class="mobile-splash-template">
+                                <p>Mobile Splash Page</p>
+                                <select>
+                                    <option>123456789</option>
+                                </select>
 
-                                <p style="font-weight: 600;">123</p>
                             </div>
-                            <div class="local-time">
-                                <div class="local-time-with-icon">
-                                    <img src="../img/delievered.png" />
-                                    <p style="font-weight: 600;">Local Time </p>
-                                </div>
+                            <div class="facebook-link">
+                                <button>Facebook</button>
+                                <input type="checkbox" style="color: black;">
+                                <img src="../img/clipart447365.png" width="10%" height="100%" />
 
-                                <p style="font-weight: 600;"> 2022-08-07 01:39:01 PM</p>
+                            </div>
+                            <div class="sms-mms-checkbox">
+                                <p>SMS</p>
+                                <input type="checkbox" style="color: black;">
+                                <p>MMS</p>
+                                <input type="checkbox" style="color: black;">
+                            </div>
+                            <div class="pick-file">
+                                <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                <label for="img">Pick File</label>
+                                <img src="../img/blank-file-64.png" width="20%" height="70%" />
+                            </div>
+                            <div class="number-pool">
+                                <p>Number Pool</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <img src="../img/clipart447365.png" width="3%" height="100%" />
                             </div>
                         </div>
-                        <div class="dashboard-content-section-3-body">
-                            <div class="dashboard-content-section-3-body-left">
-                                <div class="sender-id">
-                                    <p> Send from alphanumeric Sender ID</p>
-                                    <input type="checkbox" style="color: black;">
-                                    <img src="../img/clipart447365.png" width="3%" height="100%" />
-                                </div>
-                                <div class="receivers-list">
-                                    <p style="font-weight: 600;">Pick Receivers List</p>
-                                    <div class="receivers-list-radio">
-                                        <div class="receivers-list-radio-checklist">
-                                            <input type="radio" id="groups" value="groups"
-                                                name="receivers-list--buttons" style="color: black;">
-                                            <p> Groups</p>
-                                        </div>
-                                        <div class="receivers-list-radio-checklist">
-                                            <input type="radio" id="contacts" value="contacts"
-                                                name="receivers-list--buttons" style="color: black;">
-                                            <p> Contacts</p>
-                                        </div>
-                                        <div class="receivers-list-radio-checklist">
-                                            <input type="radio" id="manual" value="manual"
-                                                name="receivers-list--buttons" style="color: black;">
-                                            <p> Manual</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="message-groups hide" id="message-groups">
-                                    <div class="message-groups--filter--title">
-                                        <h3>Location Filters</h3>
-                                    </div>
-                                    <div class="message-groups--filter--city">
-                                        <p style="font-weight: 600;">City</p>
-                                        <input type="text" placeholder="Enter City" />
-                                    </div>
-                                    <div class="message-groups--filter--state">
-                                        <p style="font-weight: 600;">State</p>
-                                        <input type="text" placeholder="Enter State" />
-                                    </div>
-                                    <div class="message-groups--filter--postal">
-                                        <p style="font-weight: 600;">Postal Code</p>
-                                        <input type="text" placeholder="Enter Postal Code" />
-                                    </div>
-                                    <div class="message-groups--filter--delivery">
-                                        <p style="font-weight: 600;">Schedule Delivery</p>
-                                        <input type="datetime-local" placeholder="Enter A Date">
-                                    </div>
-                                </div>
-                                <div class="message-contacts hide" id="message-contacts">
-                                    <div class="message-contacts--number">
-                                        <p>Name | Group Name | Phone Number</p>
-                                        <select>
-                                            <option>123456789</option>
-                                        </select>
-                                    </div>
-                                    <div class="message-contacts--delivery">
-                                        <p>Schedule Delivery</p>
-                                        <input type="datetime-local" placeholder="Enter A Date">
-                                    </div>
-                                </div>
-                                <div class="message-manual hide" id="message-manual">
-                                    <div class="message-manual--number">
-                                        <p>Phone Number</p>
-                                        <textarea rows="3" cols="50"
-                                            placeholder="Please use country code with number"></textarea>
-                                    </div>
-                                </div>
-                                <div class="message-template">
-                                    <p>Message Template</p>
-                                    <select>
-                                        <option>123456789</option>
-                                    </select>
-
-                                </div>
-                                <div class="mobile-splash-template">
-                                    <p>Mobile Splash Page</p>
-                                    <select>
-                                        <option>123456789</option>
-                                    </select>
-
-                                </div>
-                                <div class="facebook-link">
-                                    <button>Facebook</button>
-                                    <input type="checkbox" style="color: black;">
-                                    <img src="../img/clipart447365.png" width="10%" height="100%" />
-
-                                </div>
-                                <div class="sms-mms-checkbox">
-                                    <p>SMS</p>
-                                    <input type="checkbox" style="color: black;">
-                                    <p>MMS</p>
-                                    <input type="checkbox" style="color: black;">
-                                </div>
-                                <div class="pick-file">
-                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
-                                    <label for="img">Pick File</label>
-                                    <img src="../img/blank-file-64.png" width="20%" height="70%" />
-                                </div>
-                                <div class="number-pool">
-                                    <p>Number Pool</p>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <img src="../img/clipart447365.png" width="3%" height="100%" />
-                                </div>
+                        <div class="dashboard-content-section-3-body-right">
+                            <div>
+                                <p style="font-weight: 600;">Message</p>
+                                <textarea rows="14" cols="50"></textarea>
                             </div>
-                            <div class="dashboard-content-section-3-body-right">
-                                <div>
-                                    <p style="font-weight: 600;">Message</p>
-                                    <textarea rows="14" cols="50"></textarea>
-                                </div>
-
-                                <div>
-                                    <p style="font-weight: 600;">Appended (Opt-Out) Message</p>
-                                    <textarea rows="3" cols="50"></textarea>
-                                </div>
+                            <div>
+                                <p style="font-weight: 600;">Appended (Opt-Out) Message</p>
+                                <textarea rows="3" cols="50"></textarea>
                             </div>
-
                         </div>
-                        <div class="message-preview">
-                            <p style="font-weight: 600;">Message Preview</p>
-                            <textarea name="" id="" cols="129" rows="5"></textarea>
-
-                        </div>
-
-                        <div class="number-of-characters">
-                            <div class="number-of-characters-left">
-                                <p style="font-weight: 600;">Number of Characters:0</p>
-                            </div>
-
-                            <div class="number-of-characters-right">
-                                <div class="number-of-characters-right-top-bottoms">
-                                    <button class="variation-btn">Variations</button>
-                                    <button class="spin-btn">Spin</button>
-                                </div>
-                                <button class="send-message-btn">Send Message</button>
-                            </div>
-
-                        </div>
-
                     </div>
-                </div>
-            </div>
-
-            <!-- Modals  -->
-
-            <div id="myModal1" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-
-                    <!-- Modal content-->
-
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="modal-group--header">
-                                <div class="modal-group--header--title">
-                                    <img src="../img/delievered.png" width="20%" height="20%" />
-                                    <p style="font-weight: 600;">Create Group Form</p>
-                                </div>
-                            </div>
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <div class="message-preview">
+                        <p style="font-weight: 600;">Message Preview</p>
+                        <textarea name="" id="" cols="129" rows="5"></textarea>
+                    </div>
+                    <div class="number-of-characters">
+                        <div class="number-of-characters-left">
+                            <p style="font-weight: 600;">Number of Characters:0</p>
                         </div>
-                        <div class="modal-body">
-                            <div class="modal-group--body">
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Copy Members From Existing Group</p>
-                                    <select>
-                                        <option>Please select A Group</option>
-                                    </select>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Enter Group Name</p>
-                                    <input type="text" placeholder="Group Name" />
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Keyword</p>
-                                    <input type="text" placeholder="Keyword" />
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Group Type</p>
-                                    <select>
-                                        <option>Please Select A Group Type</option>
-                                    </select>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Birthday</p>
-                                    <div class="modal-group--body--field--switch">
-                                        <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Message</p>
-                                    <textarea rows="4" cols="70"></textarea>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Mandatory Appended Message</p>
-                                    <textarea rows="4" cols="70"></textarea>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">If Member Message</p>
-                                    <textarea rows="4" cols="70"></textarea>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Double Opt-In</p>
-                                    <div class="modal-group--body--field--switch">
-                                        <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modal-group--body--field">
-                                    <p style="font-weight: 600;">Notify Sign-Up</p>
-                                    <div class="modal-group--body--field--switch">
-                                        <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                </div>
+                        <div class="number-of-characters-right">
+                            <div class="number-of-characters-right-top-bottoms">
+                                <button class="variation-btn">Variations</button>
+                                <button class="spin-btn">Spin</button>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Submit</button>
+                            <button class="send-message-btn">Send Message</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div id="myModal2" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="modal-import--header">
-                                <div class="modal-import--header--title">
-                                    <img src="../img/delievered.png" width="20%" height="20%" />
-                                    <p style="font-weight: 600;">Import Contacts</p>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-import--body">
-                                <div class="modal-import--body--upload">
-                                    <p style="font-weight: 600;">CSV Contacts File To Upload</p>
-                                    <div class="modal-import--body--upload--file">
-                                        <input type="file" name="uploadfile" id="img" style="display:none;" />
-                                        <label for="img">Pick File</label>
-                                    </div>
-                                </div>
-                                <div class="modal-import--body--info">
-                                    <p>Please upload CSV file only. NO spaces, dashes, or parentheses in phone numbers
-                                    </p>
-                                </div>
-                                <div class="modal-import--body--important">
-                                    <p>
-                                        IMPORTANT<br>The 1st row of the file should be a column header row.
-                                        This is how you will map the CSV columns sto the contact fields on the next
-                                        page.
-                                        If you have a large list (>25000). It's recommended to split your file int
-                                        multiple
-                                        csv files and import those into seperate groups.
-                                    </p>
-                                </div>
-                                <div class="modal-import--body--declaration">
-                                    <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
-                                    <div class="modal-group--body--field--switch">
-                                        <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                <!-- IMPORT CONTACTS MODAL -->
-
-            <div id="myModal2" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content" style="width: 900px;">
-                        <div class="modal-header">
-                            <div class="modal-import--header">
-                                <div class="modal-import--header--title">
-                                    <img src="../img/delievered.png" width="20%" height="20%" />
-                                    <p style="font-weight: 600;">Import Contacts</p>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-number-body">
-                            <div class="modal-number-body-note">
-                                <p>
-                                    NOTE: It's best to get Toll-Free numbers (800, 888, 877, 866, 855, 844 and 833) when
-                                    sending Bulk SMS. They are intended for A2P traffic and allow for a higher rate of
-                                    sending. Local long codes are best for P2P communication like 2-way SMS chat,
-                                    customer support, etc..
-                                </p>
-                            </div>
-                            <div class="modal-body-country">
-                                <p>Country</p>
-                                <div style="width:50%;">
-                                    <select style="width:200px ; opacity: 40%; border-radius: 10px; padding: 8px;">
-                                        <option>Canada</option>
-                                    </select>
-                                </div>
-                                
-                            </div>
-                            <div class="modal-body-select">
-                                <p>Select Type</p>
-                                <div style="width:50%;">
-                                    <select style="width:200px ; opacity: 40%; border-radius: 10px; padding: 8px;">
-                                        <option>Toll free</option>
-                                    </select>
-                                </div>
-                                
-                            </div>
-                            <div class="modal-body-area-code">
-                                <div class="modal-body-area-code-text" style="width:50%;">
-                                    <p>Please enter Area code to search for number</p>
-                                    <p style="font-size:12px; opacity: 50%;">Area Code(like 815)</p>
-                                </div>
-                                <div style="width:50%;"> 
-                                    <input type="text" placeholder="Optional" style="width:200px ; opacity: 40%; font-style: italic; border-radius: 10px; padding: 8px;">
-                                </div>
-                                
-                            </div>
-                            <div class="modal-body-contains">
-                                <div class="modal-body-contains-text" style="width:50%;">
-                                    <p>Please enter Contains to search for number</p>
-                                    <p style="font-size:12px; opacity: 50%;">Contains(like STORM)</p>
-                                </div>
-                                <div style="width:50%;"> 
-                                    <input type="text" placeholder="Optional" style="width:200px ; opacity: 40%; font-style: italic; border-radius: 10px; padding: 8px;">
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                        <div class="modal-number-body-footer">
-                             <button type="button" class="btn btn-primary" style="width:18%; padding: -2px; border-radius:12px ;     background-color: #32804e; border: none;">Search</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modals END -->
-
-
-
-
-
-
-                <!-- MESSAGE CHATBOX -->
-
-
-                <!-- <div class=" chatbox-content">
+            <div class="dashboard-content--chatbox hide">
+                <div class="chatbox-content">
                     <div class="chatbox-content--navbar">
                         <div class="chatbox-content--navbar--number">
                             <p>Send Number</p>
@@ -559,439 +314,648 @@
                             <img src="../img/icons/icons-05.png" width="7%" height="7%" />
                         </div>
                     </div>
-                    <div class=" chatbox-content">
-                        
-                        <div class="chatbox-content-body">
-                            <p class="chatbox-content-body-title" style="font-weight: 600;">SMS Chat</p>
-                            <section>
-                                <div class="container">
-    
-                                    <div class="row">
-                                        <div class="col-md-12">
-    
-                                            <div class="card-chatbox" id="chat3" style="border-radius: 15px;">
-                                                <div class="card-body ">
-    
-                                                    <div class="chatbox-contacts">
-                                                        <div
-                                                            class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 chatbox-contacts-left">
-    
-                                                            <div class="p-3">
-    
-                                                                <div class="input-group rounded mb-3">
-                                                                    <input type="search" class="form-control rounded"
-                                                                        placeholder="Search" aria-label="Search"
-                                                                        aria-describedby="search-addon"
-                                                                        style="font-style: italic; border:none;" />
-                                                                    <span class="input-group-text border-0"
-                                                                        style="background-color: white;" id="search-addon">
-                                                                        <i class="fas fa-search"></i>
-                                                                    </span>
-                                                                    <span class="input-group-text border-0 "
-                                                                        style="background-color: white;" id="search-addon">
-                                                                        <i class="fas fa-search"></i>
-                                                                    </span>
-                                                                    <span class="input-group-text border-0"
-                                                                        style="background-color: white;" id="search-addon">
-                                                                        <i class="fas fa-search"></i>
-                                                                    </span>
-                                                                </div>
-    
-                                                                <div data-mdb-perfect-scrollbar="true"
-                                                                    style="position: relative; height: 450px; overflow-y: scroll;">
-                                                                    <ul class="list-unstyled mb-0">
-                                                                        <li class="p-2 border-bottom">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-success badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Marie
-                                                                                            Horwitz</p>
-                                                                                        <p class="small text-muted">Hello,
-                                                                                            Are you there?</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">Just
-                                                                                        now</p>
-                                                                                    <span
-                                                                                        class="badge bg-danger rounded-pill float-end">3</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="p-2 border-bottom">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-warning badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Alexa Chung
-                                                                                        </p>
-                                                                                        <p class="small text-muted">Lorem
-                                                                                            ipsum dolor sit.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">5 mins
-                                                                                        ago</p>
-                                                                                    <span
-                                                                                        class="badge bg-danger rounded-pill float-end">2</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="p-2 border-bottom">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-success badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Danny
-                                                                                            McChain</p>
-                                                                                        <p class="small text-muted">Lorem
-                                                                                            ipsum dolor sit.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">
-                                                                                        Yesterday</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="p-2 border-bottom">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-danger badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Ashley
-                                                                                            Olsen
-                                                                                        </p>
-                                                                                        <p class="small text-muted">Lorem
-                                                                                            ipsum dolor sit.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">
-                                                                                        Yesterday</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="p-2 border-bottom">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-warning badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Kate Moss
-                                                                                        </p>
-                                                                                        <p class="small text-muted">Lorem
-                                                                                            ipsum dolor sit.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">
-                                                                                        Yesterday</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="p-2">
-                                                                            <a href="#!"
-                                                                                class="d-flex justify-content-between">
-                                                                                <div class="d-flex flex-row">
-                                                                                    <div>
-                                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                                                                                            alt="avatar"
-                                                                                            class="d-flex align-self-center me-3"
-                                                                                            width="60">
-                                                                                        <span
-                                                                                            class="badge bg-success badge-dot"></span>
-                                                                                    </div>
-                                                                                    <div class="pt-1">
-                                                                                        <p class="fw-bold mb-0"
-                                                                                            style="color:black;">Ben Smith
-                                                                                        </p>
-                                                                                        <p class="small text-muted">Lorem
-                                                                                            ipsum dolor sit.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="pt-1">
-                                                                                    <p class="small text-muted mb-1">
-                                                                                        Yesterday</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-    
+                    <div class="chatbox-content-body">
+                        <p class="chatbox-content-body-title" style="font-weight: 600;">SMS Chat</p>
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-chatbox" id="chat3" style="border-radius: 15px;">
+                                            <div class="card-body ">
+                                                <div class="chatbox-contacts">
+                                                    <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 chatbox-contacts-left">
+                                                        <div class="p-3">
+                                                            <div class="input-group rounded mb-3">
+                                                                <input type="search" class="form-control rounded"
+                                                                    placeholder="Search" aria-label="Search"
+                                                                    aria-describedby="search-addon"
+                                                                    style="font-style: italic; border:none;" />
+                                                                <span class="input-group-text border-0"
+                                                                    style="background-color: white;" id="search-addon">
+                                                                    <i class="fas fa-search"></i>
+                                                                </span>
+                                                                <span class="input-group-text border-0 "
+                                                                    style="background-color: white;" id="search-addon">
+                                                                    <i class="fas fa-search"></i>
+                                                                </span>
+                                                                <span class="input-group-text border-0"
+                                                                    style="background-color: white;" id="search-addon">
+                                                                    <i class="fas fa-search"></i>
+                                                                </span>
                                                             </div>
-    
+                                                            <div data-mdb-perfect-scrollbar="true"
+                                                                style="position: relative; height: 450px; overflow-y: scroll;">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li class="p-2 border-bottom">
+                                                                        <a href="#!" class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-success badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Marie
+                                                                                        Horwitz</p>
+                                                                                    <p class="small text-muted">Hello,
+                                                                                        Are you there?</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">Just
+                                                                                    now</p>
+                                                                                <span
+                                                                                    class="badge bg-danger rounded-pill float-end">3</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="p-2 border-bottom">
+                                                                        <a href="#!"
+                                                                            class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-warning badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Alexa Chung
+                                                                                    </p>
+                                                                                    <p class="small text-muted">Lorem
+                                                                                        ipsum dolor sit.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">5 mins
+                                                                                    ago</p>
+                                                                                <span
+                                                                                    class="badge bg-danger rounded-pill float-end">2</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="p-2 border-bottom">
+                                                                        <a href="#!"
+                                                                            class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-success badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Danny
+                                                                                        McChain</p>
+                                                                                    <p class="small text-muted">Lorem
+                                                                                        ipsum dolor sit.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">
+                                                                                    Yesterday</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="p-2 border-bottom">
+                                                                        <a href="#!"
+                                                                            class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-danger badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Ashley
+                                                                                        Olsen
+                                                                                    </p>
+                                                                                    <p class="small text-muted">Lorem
+                                                                                        ipsum dolor sit.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">
+                                                                                    Yesterday</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="p-2 border-bottom">
+                                                                        <a href="#!"
+                                                                            class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-warning badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Kate Moss
+                                                                                    </p>
+                                                                                    <p class="small text-muted">Lorem
+                                                                                        ipsum dolor sit.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">
+                                                                                    Yesterday</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="p-2">
+                                                                        <a href="#!"
+                                                                            class="d-flex justify-content-between">
+                                                                            <div class="d-flex flex-row">
+                                                                                <div>
+                                                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                                                        alt="avatar"
+                                                                                        class="d-flex align-self-center me-3"
+                                                                                        width="60">
+                                                                                    <span
+                                                                                        class="badge bg-success badge-dot"></span>
+                                                                                </div>
+                                                                                <div class="pt-1">
+                                                                                    <p class="fw-bold mb-0"
+                                                                                        style="color:black;">Ben Smith
+                                                                                    </p>
+                                                                                    <p class="small text-muted">Lorem
+                                                                                        ipsum dolor sit.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="pt-1">
+                                                                                <p class="small text-muted mb-1">
+                                                                                    Yesterday</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
                                                         </div>
-    
-                                                        <section style="background-color: #e6e6e6;">
-    
-    
-                                                            <div class="row d-flex justify-content-center "
-                                                                style="width:700px;  background-color: #e6e6e6">
-                                                                <div class="col-md-11 col-lg-10 col-xl-12"
-                                                                    style="width:700px;">
-    
-                                                                    <div class="card" id="chat2"
-                                                                        style=" --bs-border-color-translucent: rgba(0, 0, 0, 0); background-color:white; border-radius: 20px;">
-                                                                        <div class="card-header d-flex justify-content-between align-items-center p-3 "
-                                                                            style=" margin: -1px; border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: #F2F2F2;">
-                                                                            <h5 class="mb-0">John</h5>
-    
-                                                                        </div>
-                                                                        <div class="card-body-right-content"
-                                                                            data-mdb-perfect-scrollbar="true"
-                                                                            style=" height:400px; overflow-y:scroll; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-start">
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                                <div>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        Hi</p>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        How are you ...???
-                                                                                    </p>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        What are you doing
-                                                                                        tomorrow? Can we come up a bar?
-                                                                                    </p>
-                                                                                    <p
-                                                                                        class="small ms-3 mb-3 rounded-3 text-muted">
-                                                                                        23:58</p>
-                                                                                </div>
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="divider d-flex align-items-center mb-4">
-                                                                                <p class="text-center mx-3 mb-0"
-                                                                                    style="color: #a2aab7;">Today</p>
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-end mb-4 pt-1">
-                                                                                <div>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        Hiii, I'm good.</p>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        How are you doing?</p>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        Long time no see! Tomorrow
-                                                                                        office. will
-                                                                                        be free on sunday.</p>
-                                                                                    <p
-                                                                                        class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
-                                                                                        00:06</p>
-                                                                                </div>
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-start mb-4">
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                                <div>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        Okay</p>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        We will go on
-                                                                                        Sunday?</p>
-                                                                                    <p
-                                                                                        class="small ms-3 mb-3 rounded-3 text-muted">
-                                                                                        00:07</p>
-                                                                                </div>
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-end mb-4">
-                                                                                <div>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        That's awesome!</p>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        I will meet you Sandon Square
-                                                                                        sharp at
-                                                                                        10 AM</p>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        Is that okay?</p>
-                                                                                    <p
-                                                                                        class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
-                                                                                        00:09</p>
-                                                                                </div>
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-start mb-4">
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                                <div>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        Okay i will meet
-                                                                                        you on
-                                                                                        Sandon Square</p>
-                                                                                    <p
-                                                                                        class="small ms-3 mb-3 rounded-3 text-muted">
-                                                                                        00:11</p>
-                                                                                </div>
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-end mb-4">
-                                                                                <div>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        Do you have pictures of Matley
-                                                                                        Marriage?</p>
-                                                                                    <p
-                                                                                        class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
-                                                                                        00:11</p>
-                                                                                </div>
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-start mb-4">
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                                <div>
-                                                                                    <p class="small p-2 ms-3 mb-1 rounded-3"
-                                                                                        style="background-color: #f5f6f7;">
-                                                                                        Sorry I don't
-                                                                                        have. i
-                                                                                        changed my phone.</p>
-                                                                                    <p
-                                                                                        class="small ms-3 mb-3 rounded-3 text-muted">
-                                                                                        00:13</p>
-                                                                                </div>
-                                                                            </div>
-    
-                                                                            <div
-                                                                                class="d-flex flex-row justify-content-end">
-                                                                                <div>
-                                                                                    <p
-                                                                                        class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
-                                                                                        Okay then see you on sunday!!
-                                                                                    </p>
-                                                                                    <p
-                                                                                        class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
-                                                                                        00:15</p>
-                                                                                </div>
-                                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                                                                    alt="avatar 1"
-                                                                                    style="width: 45px; height: 100%;">
-                                                                            </div>
-    
-                                                                        </div>
-                                                                        <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
-                                                                            style="margin: -1px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; background-color: #F2F2F2;">
-                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                                alt="avatar 3"
-                                                                                style="width: 40px; height: 100%;">
-                                                                            <input type="text"
-                                                                                class="form-control form-control-lg"
-                                                                                id="exampleFormControlInput1"
-                                                                                placeholder="Type message"
-                                                                                style="border: none; background-color: #F2F2F2; font-style: italic;">
-                                                                            <a class="ms-1 text-muted" href="#!"><i
-                                                                                    class="fas fa-paperclip"></i></a>
-                                                                            <a class="ms-3 text-muted" href="#!"><i
-                                                                                    class="fas fa-smile"></i></a>
-                                                                            <a class="ms-3" href="#!"><i
-                                                                                    class="fas fa-paper-plane"></i></a>
-                                                                        </div>
+
+                                                    </div>
+
+                                                    <section style="background-color: #e6e6e6;">
+
+
+                                                        <div class="row d-flex justify-content-center "
+                                                            style="width:700px;  background-color: #e6e6e6">
+                                                            <div class="col-md-11 col-lg-10 col-xl-12"
+                                                                style="width:700px;">
+
+                                                                <div class="card" id="chat2"
+                                                                    style=" --bs-border-color-translucent: rgba(0, 0, 0, 0); background-color:white; border-radius: 20px;">
+                                                                    <div class="card-header d-flex justify-content-between align-items-center p-3 "
+                                                                        style=" margin: -1px; border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: #F2F2F2;">
+                                                                        <h5 class="mb-0">John</h5>
+
                                                                     </div>
-    
+                                                                    <div class="card-body-right-content"
+                                                                        data-mdb-perfect-scrollbar="true"
+                                                                        style=" height:400px; overflow-y:scroll; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-start">
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                            <div>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    Hi</p>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    How are you ...???
+                                                                                </p>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    What are you doing
+                                                                                    tomorrow? Can we come up a bar?
+                                                                                </p>
+                                                                                <p
+                                                                                    class="small ms-3 mb-3 rounded-3 text-muted">
+                                                                                    23:58</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="divider d-flex align-items-center mb-4">
+                                                                            <p class="text-center mx-3 mb-0"
+                                                                                style="color: #a2aab7;">Today</p>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-end mb-4 pt-1">
+                                                                            <div>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    Hiii, I'm good.</p>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    How are you doing?</p>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    Long time no see! Tomorrow
+                                                                                    office. will
+                                                                                    be free on sunday.</p>
+                                                                                <p
+                                                                                    class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                                                    00:06</p>
+                                                                            </div>
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-start mb-4">
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                            <div>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    Okay</p>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    We will go on
+                                                                                    Sunday?</p>
+                                                                                <p
+                                                                                    class="small ms-3 mb-3 rounded-3 text-muted">
+                                                                                    00:07</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-end mb-4">
+                                                                            <div>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    That's awesome!</p>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    I will meet you Sandon Square
+                                                                                    sharp at
+                                                                                    10 AM</p>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    Is that okay?</p>
+                                                                                <p
+                                                                                    class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                                                    00:09</p>
+                                                                            </div>
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-start mb-4">
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                            <div>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    Okay i will meet
+                                                                                    you on
+                                                                                    Sandon Square</p>
+                                                                                <p
+                                                                                    class="small ms-3 mb-3 rounded-3 text-muted">
+                                                                                    00:11</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-end mb-4">
+                                                                            <div>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    Do you have pictures of Matley
+                                                                                    Marriage?</p>
+                                                                                <p
+                                                                                    class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                                                    00:11</p>
+                                                                            </div>
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-start mb-4">
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                            <div>
+                                                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                                                    style="background-color: #f5f6f7;">
+                                                                                    Sorry I don't
+                                                                                    have. i
+                                                                                    changed my phone.</p>
+                                                                                <p
+                                                                                    class="small ms-3 mb-3 rounded-3 text-muted">
+                                                                                    00:13</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-end">
+                                                                            <div>
+                                                                                <p
+                                                                                    class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                                                    Okay then see you on sunday!!
+                                                                                </p>
+                                                                                <p
+                                                                                    class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                                                    00:15</p>
+                                                                            </div>
+                                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                                alt="avatar 1"
+                                                                                style="width: 45px; height: 100%;">
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
+                                                                        style="margin: -1px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; background-color: #F2F2F2;">
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                            alt="avatar 3"
+                                                                            style="width: 40px; height: 100%;">
+                                                                        <input type="text"
+                                                                            class="form-control form-control-lg"
+                                                                            id="exampleFormControlInput1"
+                                                                            placeholder="Type message"
+                                                                            style="border: none; background-color: #F2F2F2; font-style: italic;">
+                                                                        <a class="ms-1 text-muted" href="#!"><i
+                                                                                class="fas fa-paperclip"></i></a>
+                                                                        <a class="ms-3 text-muted" href="#!"><i
+                                                                                class="fas fa-smile"></i></a>
+                                                                        <a class="ms-3" href="#!"><i
+                                                                                class="fas fa-paper-plane"></i></a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-    
-    
-                                                        </section>
-                                                    </div>
-    
+                                                        </div>
+                                                    </section>
                                                 </div>
                                             </div>
-    
                                         </div>
                                     </div>
-    
                                 </div>
-                            </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals  -->
+
+    <!-- CREATE GROUP MODAL -->
+
+    <div id="myModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-group--header">
+                        <div class="modal-group--header--title">
+                            <img src="../img/delievered.png" width="20%" height="20%" />
+                            <p style="font-weight: 600;">Create Group Form</p>
                         </div>
                     </div>
-
-
-                                     
-                </div> -->
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-group--body">
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Copy Members From Existing Group</p>
+                            <select>
+                                <option>Please select A Group</option>
+                            </select>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Enter Group Name</p>
+                            <input type="text" placeholder="Group Name" />
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Keyword</p>
+                            <input type="text" placeholder="Keyword" />
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Group Type</p>
+                            <select>
+                                <option>Please Select A Group Type</option>
+                            </select>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Birthday</p>
+                            <div class="modal-group--body--field--switch">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Message</p>
+                            <textarea rows="4" cols="70"></textarea>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Mandatory Appended Message</p>
+                            <textarea rows="4" cols="70"></textarea>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">If Member Message</p>
+                            <textarea rows="4" cols="70"></textarea>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Double Opt-In</p>
+                            <div class="modal-group--body--field--switch">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-group--body--field">
+                            <p style="font-weight: 600;">Notify Sign-Up</p>
+                            <div class="modal-group--body--field--switch">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- GET NEW NUMBER MODAL -->
+
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-import--header">
+                        <div class="modal-import--header--title">
+                            <img src="../img/delievered.png" width="20%" height="20%" />
+                            <p style="font-weight: 600;">GET NEW NUMBER</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-number-body">
+                        <div class="modal-number-body-note">
+                            <p>
+                                NOTE: It's best to get Toll-Free numbers (800, 888, 877, 866, 855, 844 and
+                                833)
+                                when
+                                sending Bulk SMS. They are intended for A2P traffic and allow for a higher
+                                rate
+                                of
+                                sending. Local long codes are best for P2P communication like 2-way SMS
+                                chat,
+                                customer support, etc..
+                            </p>
+                        </div>
+                        <div class="modal-body-country">
+                            <p>Country</p>
+                            <div style="width:50%;">
+                                <select
+                                    style="width:200px ; opacity: 40%; border-radius: 10px; padding: 8px;">
+                                    <option>Canada</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-body-select">
+                            <p>Select Type</p>
+                            <div style="width:50%;">
+                                <select
+                                    style="width:200px ; opacity: 40%; border-radius: 10px; padding: 8px;">
+                                    <option>Toll free</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-body-area-code">
+                            <div class="modal-body-area-code-text" style="width:50%;">
+                                <p>Please enter Area code to search for number</p>
+                                <p style="font-size:12px; opacity: 50%;">Area Code(like 815)</p>
+                            </div>
+                            <div style="width:50%;">
+                                <input type="text" placeholder="Optional"
+                                    style="width:200px ; opacity: 40%; font-style: italic; border-radius: 10px; padding: 8px;">
+                            </div>
+
+                        </div>
+                        <div class="modal-body-contains">
+                            <div class="modal-body-contains-text" style="width:50%;">
+                                <p>Please enter Contains to search for number</p>
+                                <p style="font-size:12px; opacity: 50%;">Contains(like STORM)</p>
+                            </div>
+                            <div style="width:50%;">
+                                <input type="text" placeholder="Optional"
+                                    style="width:200px ; opacity: 40%; font-style: italic; border-radius: 10px; padding: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+
+    <!-- IMPORT CONTACTS MODAL -->
+
+    <div id="myModal3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-import--header">
+                            <div class="modal-import--header--title">
+                                <img src="../img/delievered.png" width="20%" height="20%"/>
+                                <p style="font-weight: 600;">Import Contacts</p>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-import--body">
+                            <div class="modal-import--body--upload">
+                                <p style="font-weight: 600;">CSV Contacts File To Upload</p>
+                                <div class="modal-import--body--upload--file">
+                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                    <label for="img">Pick File</label>
+                                </div>
+                            </div>
+                            <div class="modal-import--body--info">
+                                <p>Please upload CSV file only. NO spaces, dashes, or parentheses in phone numbers</p>
+                            </div>
+                            <div class="modal-import--body--important">
+                                <p>
+                                    IMPORTANT<br>The 1st row of the file should be a column header row. 
+                                    This is how you will map the CSV columns sto the contact fields on the next page.
+                                    If you have a large list (>25000). It's recommended to split your file int multiple
+                                    csv files and import those into seperate groups.
+                                </p>
+                            </div>
+                            <div class="modal-import--body--declaration">
+                                <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
+                                <div class="modal-group--body--field--switch">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+    <!-- Modals END -->
 
             <script src="../js/graph.js"></script>
             <script src="../js/pick.js"></script>
