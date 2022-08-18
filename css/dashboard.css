@@ -5,24 +5,26 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .dashboard {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
     padding-left: 0;
-    column-gap: 30px;
+    /* column-gap: 20px; */
 }
 
 .dashboard-navbaar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 20%;
     height: max-content;
     row-gap: 25px;
-    position: static;
-
 }
 
 .dashboard-navbaar--icon {
@@ -39,29 +41,33 @@ body {
 .dashboard-navbaar--links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     height: 70vh;
     width: 100%;
     background-color: white;
     border-radius: 0 30px 30px 0;
-    padding-top: 20px;
-    row-gap: 10px;
+    padding-top: 40px;
+    row-gap: 20px;
 }
 
-.dashboard-navbaar--links--dashboard {
+.dashboard-navbaar--links--button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    column-gap: 15px;
+    border: none;
+    width: 80%;
+    border-radius: 15px 0 0 15px;
+    /* column-gap: 15px; */
+    background-color: white;
 }
 
-.dashboard-navbaar--links--messages {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    column-gap: 15px;
+.active {
+    background-color: #e0e0e0;
+}
+
+.dashboard-navbaar--links--button p {
+    margin: 0;
 }
 
 .dashboard-navbaar--links--activity-logs{
