@@ -1198,7 +1198,7 @@ justify-content:center;
 .contact-page-last-div-first-row-right-icons{
     display: flex;
     flex-direction: row;
-    column-gap: 4px;
+    column-gap: 0px;
     /* width: 33%; */
     justify-content: space-between;
 }
@@ -1210,6 +1210,109 @@ justify-content:center;
     border-radius: 10px;
     color: white;
 }
+
+
+/* CONTACT PAGE HOVER EFFECT */
+
+.contact-hover-effect-navbar{
+    position: relative;
+    width: 8%;
+    height: fit-content;
+    margin: 0px;
+   padding: 0px;
+  }
+  
+  .image {
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .image img{
+    margin: 0px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+  }
+  
+  .contact-hover-effect-navbar:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 65%;
+    left: 90%;
+    -webkit-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    transform: translate(10%, 150%);
+    text-align: center;
+  }
+
+
+   /* CONTACT PAGE FOOTER HOVER EFFECT */
+
+   .contact-hover-effect-footer {
+    position: relative;
+    width: 13%;
+    height: fit-content;
+    margin: 0px;
+   padding: 0px;
+  }
+  
+  .image {
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .image img{
+    margin: 0px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+  }
+  
+  .contact-hover-effect-footer:hover .overlay {
+    opacity: 1;
+  }
+  
+  .contact-text-footer{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    -webkit-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    transform: translate(10%, 150%);
+    text-align: center;
+  }
+  
+  
+
 /* CONTACT PAGE END */
 
 .hide {
