@@ -309,3 +309,54 @@ justify-content:center;
 .contact-page-last-div-first-row-right-icons img{
     width: 12%;
 }
+
+
+
+
+.container {
+    position: relative;
+    width: 6%;
+    height: fit-content;
+    margin: 0px;
+   padding: 0px;
+  }
+  
+  .image {
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .image img{
+    margin: 0px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 65%;
+    left: 90%;
+    -webkit-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    transform: translate(10%, 150%);
+    text-align: center;
+  }
+  
