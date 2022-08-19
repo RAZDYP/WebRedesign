@@ -1121,12 +1121,29 @@ width: 30%;
 .contact-page-last-div-navbar-right{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 10px;
     width: 55%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-weight: 600;
 }
+
+.contact-page-last-div-navbar-right > .actions {
+    text-align: center;
+}
+
+.subscriber {
+    width: 20%;
+}
+
+.source {
+    width: 20%;
+}
+
+.actions {
+    width: 45%;
+}
+
 .contact-page-last-div-first-row{
     display: flex;
     flex-direction: row;
@@ -1148,11 +1165,16 @@ width: 30%;
 .contact-page-last-div-first-row-right{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 10px;
     width: 55%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+
+.contact-page-last-div-first-row-right > .subscriber {
+    text-align: center;
+}
+
 .contact-page-last-div-first-row-right-image{
 width: 34%;
 display: flex;
@@ -1177,14 +1199,17 @@ justify-content:center;
     display: flex;
     flex-direction: row;
     column-gap: 4px;
-    width: 33%;
+    /* width: 33%; */
     justify-content: space-between;
-    justify-content: flex-start;
-}
-.contact-page-last-div-first-row-right-icons img{
-    width: 12%;
 }
 
+.contact-page-last-div-first-row-right-icons button {
+    border: none;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
 /* CONTACT PAGE END */
 
 .hide {
