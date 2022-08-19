@@ -306,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content--chatbox hide">
+            <div class="dashboard-content--chatbox">
                 <div class="chatbox-content">
                     <div class="chatbox-content--navbar">
                         <div class="chatbox-content--navbar--number">
@@ -527,7 +527,7 @@
 
 
                                                         <div class="row d-flex justify-content-center "
-                                                            style="width:700px;  background-color: #e6e6e6">
+                                                            style="width:700px;">
                                                             <div class="col-md-11 col-lg-10 col-xl-12"
                                                                 style="width:700px;">
 
@@ -735,10 +735,14 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
 
 
             <div class="dashboard-content-contact">
+=======
+            <div class="dashboard-content-contact hide">
+>>>>>>> 55dd5b650f74da636c59541868334739f86af2b3
                 <div class="contact-page">
                     <div class="contact-page-navbar">
                         <div class="contact-page-navbar-icons">
@@ -869,6 +873,182 @@
                                         style="width:14% ;" title="Delete Contact"/>
                                     <img src="../img/New folder (3)/contactsicons-50.png"
                                         style="width:14% ;" title="Delete Chat"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-content-activity hide">
+                <div class="activity">
+                    <div class="activity-navbar">
+                        <div class="activity-navbar--number">
+                            <p style="font-weight: 600;">Log Type</p>
+                            <select name="device" id="device">
+                                <option value="">Select Device</option>
+                                <option value="1">Device 1</option>
+                                <option value="2">Device 2</option>
+                                <option value="3">Device 3</option>
+                            </select>
+                        </div>
+                        <div class="activity-navbar--icons">
+                            <img src="../img/icons/icons-copy.png" width="5%" />
+                            <img src="../img/icons/icons-xx.png"  width="5%"/>
+                            <img src="../img/icons/icons-printer.png" width="5%"/>
+                            <img src="../img/icons/icons-3-bars.png" width="5%"/>
+                            <!-- <div class="container">
+                                <img src="../img/icons/icons-copy.png" class="image" />
+                                <div class="overlay">
+                                    <div class="text">Copy</div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <img src="../img/icons/icons-xx.png" class="image" style="margin: 0px;" />
+                                <div class="overlay">
+                                    <div class="text">Quit</div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <img src="../img/icons/icons-printer.png" class="image" />
+                                <div class="overlay">
+                                    <div class="text">Print</div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <img src="../img/icons/icons-3-bars.png" class="image" />
+                                <div class="overlay">
+                                    <div class="text">Activity</div>
+                                </div>
+                            </div> -->
+                            <!-- <img src="../img/icons/icons-xx.png" width="5%" />
+                            <img src="../img/icons/icons-printer.png" width="5%" />
+                            <img src="../img/icons/icons-3-bars.png" width="5%" /> -->
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-search">
+                            <div class="activity-search--header">
+                                <p style="font-weight: 600;">Search Messages</p>
+                            </div>
+                            <div class="activity-search--input">
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="device">Select Device</label>
+                                    <select name="device" id="device">
+                                        <option value="">Select Device</option>
+                                        <option value="1">Device 1</option>
+                                        <option value="2">Device 2</option>
+                                        <option value="3">Device 3</option>
+                                    </select>
+                                </div>
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="phone">Mobile Number</label>
+                                    <input type="tel" name="phone" id="phone" />
+                                </div>
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="status">Status</label>
+                                    <select name="status" id="status">
+                                        <option value="">Select Device</option>
+                                        <option value="1">Device 1</option>
+                                        <option value="2">Device 2</option>
+                                        <option value="3">Device 3</option>
+                                    </select>
+                                </div>
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="message0">Message</label>
+                                    <input type="text" name="message" id="message" />
+                                </div>
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="start-date">Start Date</label>
+                                    <input type="date" name="start-date" id="start-date" />
+                                </div>
+                                <div class="activity-search--input--field">
+                                    <img src="../img/icons/icons-05.png" width="5%" height="5%" />
+                                    <label for="end-date">End Date</Em></label>
+                                    <input type="date" name="end-date" id="end-date" />
+                                </div>
+                            </div>
+                            <div class="activity-search--buttons">
+                                <div class="activity-search--buttons--button">
+                                    <button>Search</button>
+                                </div>
+                                <div class="activity-search-buttons--records">
+                                    <label for="records">Number Of Records</label>
+                                    <select>
+                                        <option value="60">60</option>
+                                        <option value="100">100</option>
+                                        <option value="120">120</option>
+                                        <option value="150">150</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="activity-page-last-div">
+                            <div class="activity-page-last-div-navbar">
+                                <div class="activity-page-last-div-navbar-left">
+                                    <p>Read</p>
+                                    <p>From Number</p>
+                                    <p>To Number</p>
+                                    <p>Name</p>
+                                </div>
+                                <div class="activity-page-last-div-navbar-right">
+                                    <div class="activity-page-last-div-navbar-right-message-status">
+                                        <p>Messages</p>
+                                        <p>Created</p>
+                                        <p>Status</p>
+                                    </div>
+            
+                                    <p class="activity-page-last-div-navbar-right-actions">Actions</p>
+            
+                                </div>
+                            </div>
+                            <div class="activity-page-last-div-first-row">
+                                <div class="activity-page-last-div-first-row-left">
+                                    <img src="../img/icons/right icon.png" width="100%" height="100%"
+                                        style="width:5%; height: auto;">
+                                    <p>From Number</p>
+                                    <p>To Number</p>
+                                    <p>Name</p>
+                                </div>
+                                <div class="activity-page-last-div-first-row-right">
+                                    <div class="activity-page-last-div-navbar-right-message-status">
+                                        <p>Messages</p>
+                                        <p>Created</p>
+                                        <p>Status</p>
+                                    </div>
+                                    <div class="activity-page-last-div-first-row-right-icons"
+                                        style="width: 30%; display: flex; justify-content:flex-start; column-gap: 10px;">
+                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%">
+                                        <img src="../img/icons/icons-message.png" width="20%" height="20%">
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="activity-page-last-div-first-row">
+                                <div class="activity-page-last-div-first-row-left">
+                                    <img src="../img/icons/right icon.png" width="100%" height="100%"
+                                        style="width:5%; height: auto;">
+                                    <p>From Number</p>
+                                    <p>To Number</p>
+                                    <p>Name</p>
+                                </div>
+                                <div class="activity-page-last-div-first-row-right">
+                                    <div class="activity-page-last-div-navbar-right-message-status">
+                                        <p>Messages</p>
+                                        <p>Created</p>
+                                        <p>Status</p>
+                                    </div>
+                                    <div class=".activity-page-last-div-first-row-right-icons"
+                                        style="width: 30%; display: flex; justify-content:flex-start; column-gap: 10px;">
+                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%">
+                                        <img src="../img/icons/icons-message.png" width="20%" height="20%">
+                                    </div>
+            
                                 </div>
                             </div>
                         </div>
