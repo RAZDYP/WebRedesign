@@ -31,13 +31,15 @@
         integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
+
 </head>
 
 <body>
     <div class="dashboard">
         <div class="dashboard-navbaar">
             <div class="dashboard-navbaar--icon">
-                <img src="../img/SMS-iT-NEW-LOGO-MEDIUM.png" width="65%" height="35%" />
+                <img src="../img/SMS-iT-NEW-LOGO-MEDIUM.png" width="90%" height="50%" />
             </div>
             <div class="dashboard-navbaar--links">
                 <button class="dashboard-navbaar--links--button active">
@@ -60,7 +62,7 @@
         </div>
         <div class="dashboard-content">
             <div class="dashboard-content--dashboard hide">
-                <div class="dashboard-content--cards">
+                <!-- <div class="dashboard-content--cards">
                     <div class="dashboard-content--cards--rows--1">
                         <div class="dashboard-card">
                             <div class="dashboard-card--info">
@@ -137,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="dashboard-content-section-2">
                     <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
                     <button data-bs-toggle="modal" data-bs-target="#myModal2">Get New Number</button>
@@ -306,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content--chatbox">
+            <div class="dashboard-content--chatbox hide">
                 <div class="chatbox-content">
                     <div class="chatbox-content--navbar">
                         <div class="chatbox-content--navbar--number">
@@ -733,11 +735,11 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content-contact hide">
+            <div class="dashboard-content-contact">
                 <div class="contact-page">
                     <div class="contact-page-navbar">
                         <div class="contact-page-navbar-icons">
-                            <img src="../img/New folder (3)/contactsicons-51.png">
+                            <img src="../img/New folder (3)/contactsicons-51.png" width="100%" height="100%">
                             <img src="../img/New folder (3)/contactsicons-52.png">
                             <img src="../img/New folder (3)/contactsicons-53.png">
                             <img src="../img/New folder (3)/contactsicons-54.png">
@@ -750,7 +752,7 @@
                         </div>
                     </div>
                     <div class="contact-page-mid-div">
-                        <p style="font-size:larger; font-weight:600">Contact Search</p>
+                        <p style="font-size:1.4vw; font-weight:600">Contact Search</p>
                         <div class="contact-search-with-border">
                             <div class="contact-search-with-border-left">
                                 <p>Field you want to search on</p>
@@ -890,7 +892,7 @@
                 <div class="activity">
                     <div class="activity-navbar">
                         <div class="activity-navbar--number">
-                            <p style="font-weight: 600;">Log Type</p>
+                            <p style="font-size: 1vw; font-weight: 600;">Log Type</p>
                             <select name="device" id="device">
                                 <option value="">Select Device</option>
                                 <option value="1">Device 1</option>
@@ -899,37 +901,10 @@
                             </select>
                         </div>
                         <div class="activity-navbar--icons">
-                            <img src="../img/icons/icons-copy.png" width="5%" />
-                            <img src="../img/icons/icons-xx.png"  width="5%"/>
-                            <img src="../img/icons/icons-printer.png" width="5%"/>
-                            <img src="../img/icons/icons-3-bars.png" width="5%"/>
-                            <!-- <div class="container">
-                                <img src="../img/icons/icons-copy.png" class="image" />
-                                <div class="overlay">
-                                    <div class="text">Copy</div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <img src="../img/icons/icons-xx.png" class="image" style="margin: 0px;" />
-                                <div class="overlay">
-                                    <div class="text">Quit</div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <img src="../img/icons/icons-printer.png" class="image" />
-                                <div class="overlay">
-                                    <div class="text">Print</div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <img src="../img/icons/icons-3-bars.png" class="image" />
-                                <div class="overlay">
-                                    <div class="text">Activity</div>
-                                </div>
-                            </div> -->
-                            <!-- <img src="../img/icons/icons-xx.png" width="5%" />
-                            <img src="../img/icons/icons-printer.png" width="5%" />
-                            <img src="../img/icons/icons-3-bars.png" width="5%" /> -->
+                            <img src="../img/icons/icons-copy.png" title="Copy" width="35px" />
+                            <img src="../img/icons/icons-xx.png"  title="Copy" width="35px"/>
+                            <img src="../img/icons/icons-printer.png" title="Copy" width="35px"/>
+                            <img src="../img/icons/icons-3-bars.png" title="Copy" width="35px"/>
                         </div>
                     </div>
                     <div class="activity-body">
@@ -1050,7 +1025,7 @@
                                         <p>Created</p>
                                         <p>Status</p>
                                     </div>
-                                    <div class=".activity-page-last-div-first-row-right-icons"
+                                    <div class="activity-page-last-div-first-row-right-icons"
                                         style="width: 30%; display: flex; justify-content:flex-start; column-gap: 10px;">
                                         <img src="../img/icons/icons-eye.png" width="20%" height="20%">
                                         <img src="../img/icons/icons-message.png" width="20%" height="20%">
@@ -1491,7 +1466,13 @@
 
 
     <!-- Modals END -->
-
+            <script>
+                ClassicEditor
+                    .create( document.querySelector( '#editor' ) )
+                    .catch( error => {
+                        console.error( error );
+                    } );
+            </script>    
             <script src="../js/graph.js"></script>
             <script src="../js/pick.js"></script>
             <script src="../js/jquery.min.js"></script>

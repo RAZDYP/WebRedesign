@@ -14,6 +14,7 @@ body {
     flex-direction: row;
     padding-top: 30px;
     padding-left: 0;
+    /* height: 100vh; */
     /* column-gap: 20px; */
 }
 
@@ -22,9 +23,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 20%;
+    width: 18%;
     height: max-content;
     row-gap: 25px;
+    height: 100vh;
 }
 
 .dashboard-navbaar--icon {
@@ -32,10 +34,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 20%;
     background-color: white;
     border-radius: 0 30px 30px 0;
     width: 100%;
+    object-fit: contain;
 }
 
 .dashboard-navbaar--links {
@@ -68,6 +71,9 @@ body {
 
 .dashboard-navbaar--links--button p {
     margin: 0;
+    font-size: 1.1vw;
+    /* font-weight: bold; */
+    color: #2F2F2F;
 }
 
 .dashboard-navbaar--links--activity-logs{
@@ -82,7 +88,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 100%;
     row-gap: 50px;
 }
@@ -103,6 +109,7 @@ body {
     justify-content: start;
     align-items: center;
     row-gap: 20px;
+    width: 80%;
 }
 
 .dashboard-content--cards--rows--1 {
@@ -112,6 +119,7 @@ body {
     align-items: center;
     column-gap: 20px;
     margin-left: 20px;
+    width: 100%;
 }
 
 .dashboard-card {
@@ -124,7 +132,7 @@ body {
     /* padding-right: 10px; */
     background-color: white;
     border-radius: 30px;
-    width:auto;
+    width:75%;
     height: auto;
     row-gap: 15px;
     
@@ -179,7 +187,7 @@ justify-content:center;
     width: 25%;
     padding: 10px 30px;
     border-radius: 15px;
-    font-size: large;
+    font-size: 1.1vw;
 }
 
 
@@ -208,6 +216,7 @@ justify-content:center;
     background-color: #E9E9E9;
     padding: 30px;
     row-gap: 20px;
+    font-size: 1vw;
 }
 
 .dashboard-content-section-3-navbar{
@@ -877,6 +886,10 @@ width: 30%;
 
 }
 
+.contact-page-navbar p {
+    font-size: 1.1vw;
+}
+
 .contact-page-navbar-icons {
     display: flex;
     flex-direction: row;
@@ -886,8 +899,8 @@ width: 30%;
     width: 60%;
     background-color: #e6e6e6;
     padding: 6px;
-    border-radius: 20px;
-
+    border-radius: 20%;
+    object-fit: contain;
 }
 
 .contact-page-navbar-icons img {
@@ -922,6 +935,7 @@ width: 30%;
     border: none;
     padding: 10px;
     width: 50%;
+    font-size: 1vw;
 }
 
 .contact-page-mid-div {
@@ -959,13 +973,14 @@ width: 30%;
     margin: 0px;
     opacity: 70%;
     width: 70%;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .contact-search-with-border-left select {
     width: 70%;
     border-radius: 10px;
     padding: 10px;
+    font-size: 1vw;
 }
 
 .contact-search-with-border-right {
@@ -980,7 +995,7 @@ width: 30%;
 .contact-search-with-border-right p {
     margin: 0px;
     opacity: 70%;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .contact-search-with-border-right input {
@@ -990,6 +1005,7 @@ width: 30%;
     border-radius: 10px;
     border: none;
     background-color: #e6e6e6;
+    font-size: 1vw;
 }
 
 .contact-search-no-border {
@@ -1014,7 +1030,7 @@ width: 30%;
     margin: 0px;
     opacity: 70%;
     width: 25%;
-    font-size: 16px;
+    font-size: 1.1vw;
 }
 
 .contact-search-no-border-left-groups {
@@ -1035,13 +1051,14 @@ width: 30%;
     width: 75%;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1vw;
 }
 
 .contact-search-no-border-right {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
-    width: 45%;
+    width: 50%;
     align-items: center;
     justify-content: space-between;
 }
@@ -1051,17 +1068,19 @@ width: 30%;
     flex-direction: row;
     column-gap: 20px;
     align-items: center;
-    width: 70%;
+    width: 85%;
 }
 
 .contact-search-no-border-right-source p {
     opacity: 70%;
+    font-size: 1.1vw;
 }
 
 .contact-search-no-border-right-source select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1vw;
 }
 
 .contact-search-no-border-right-reset {
@@ -1070,13 +1089,14 @@ width: 30%;
     border-radius: 6px;
     padding: 2px;
     width: 30%;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .contact-page-mid-div-search-button{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1vw;
 }
 .contact-page-mid-div-search-button button{
     border: none;
@@ -1102,6 +1122,11 @@ width: 30%;
     background-color: white;
     border-radius: 20px;
 }
+
+.contact-page-last-div p {
+    font-size: 1vw;
+}
+
 .contact-page-last-div-navbar{
     display: flex;
     flex-direction: row;
@@ -1174,7 +1199,7 @@ width: 30%;
 }
 
 .contact-page-last-div-first-row-right-image{
-width: 34%;
+width: 100%;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -1269,6 +1294,7 @@ justify-content:center;
     width: 60%;
     border: none;
     border-radius: 13px;
+    font-size: 1vw;
     padding: 6px;
 }
 
@@ -1284,6 +1310,11 @@ justify-content:center;
     height: 60px;
    padding-left: 5px;
    
+}
+
+.activity-navbar--icons > img:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
 }
 
 .activity-body {
@@ -1315,6 +1346,7 @@ justify-content:center;
     align-items: center;
     column-gap: 15px;
     width: 100%;
+    font-size: 1.2vw;
 }
 
 .activity-search--input {
@@ -1352,6 +1384,11 @@ justify-content:center;
     border: none;
     border-radius: 10px;
     padding: 6px;
+    font-size: 1vw;
+}
+
+.activity-search--input--field label {
+    font-size: 1vw;
 }
 
 .activity-search--input--field select,
@@ -1389,6 +1426,7 @@ justify-content:center;
     padding: 6px;
     background-color: #22B573;
     color: #fff;
+    font-size: 1vw;
 }
 
 .activity-search-buttons--records {
@@ -1402,10 +1440,16 @@ justify-content:center;
 }
 
 .activity-search-buttons--records select {
-    width: 30%;
+    width: 50%;
     border: 1px solid black;
     border-radius: 10px;
     padding: 6px;
+    font-size: 0.9vw;
+}
+
+.activity-search-buttons--records label {
+    font-size: 0.8vw;
+    width: 60%;
 }
 
 .activity-table {
@@ -1456,6 +1500,7 @@ justify-content:center;
     background-color:white;
     border-radius: 20px;
     width: 100%;
+    font-size: 1vw;
 }
 .activity-page-last-div p{
     margin: 0px;
@@ -1536,6 +1581,11 @@ justify-content:center;
     column-gap: 10px;
 }
 
+.activity-page-last-div-first-row-right-icons > img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
 /* ACTIVITY PAGE END */
 
