@@ -42,27 +42,27 @@
                 <img src="../img/SMS-iT-NEW-LOGO-MEDIUM.png" width="90%" height="50%" />
             </div>
             <div class="dashboard-navbaar--links">
-                <button class="dashboard-navbaar--links--button active">
+                <button class="dashboard-navbaar--links--button active" id="dashboard-content--dashboard">
                     <img src="../Icons/dashboard-icon.png" width="25%" />
                     <p>Dashboard</p>
                 </button>
-                <button class="dashboard-navbaar--links--button">
+                <button class="dashboard-navbaar--links--button" id="dashboard-content--chatbox">
                     <img src="../Icons/message-icon.png" width="25%" />
                     <p>Messages</p>
                 </button>
-                <button class="dashboard-navbaar--links--button">
+                <button class="dashboard-navbaar--links--button" id="dashboard-content-activity">
                     <img src="../Icons/message-icon.png" width="25%" />
                     <p>Activity Logs</p>
                 </button>
-                <button class="dashboard-navbaar--links--button">
+                <button class="dashboard-navbaar--links--button" id="dashboard-content-contact">
                     <img src="../Icons/message-icon.png" width="25%" />
                     <p>Contacts</p>
                 </button>
             </div>
         </div>
         <div class="dashboard-content">
-            <div class="dashboard-content--dashboard hide">
-                <!-- <div class="dashboard-content--cards">
+            <div class="dashboard-content--dashboard dashboard-content-info">
+                <div class="dashboard-content--cards">
                     <div class="dashboard-content--cards--rows--1">
                         <div class="dashboard-card">
                             <div class="dashboard-card--info">
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="dashboard-content-section-2">
                     <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
                     <button data-bs-toggle="modal" data-bs-target="#myModal2">Get New Number</button>
@@ -308,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content--chatbox">
+            <div class="dashboard-content--chatbox dashboard-content-info hide">
                 <div class="chatbox-content">
                     <div class="chatbox-content--navbar">
                         <div class="chatbox-content--navbar--number">
@@ -737,7 +737,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content-contact hide">
+            <div class="dashboard-content-contact dashboard-content-info hide">
                 <div class="contact-page">
                     <div class="contact-page-navbar">
                         <div class="contact-page-navbar-icons">
@@ -874,7 +874,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content-activity hide">
+            <div class="dashboard-content-activity dashboard-content-info hide">
                 <div class="activity">
                     <div class="activity-navbar">
                         <div class="activity-navbar--number">
