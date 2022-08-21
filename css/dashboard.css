@@ -63,6 +63,9 @@ body {
     border-radius: 15px 0 0 15px;
     /* column-gap: 15px; */
     background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 .active {
@@ -794,6 +797,11 @@ width: 30%;
     
 }
 
+.chatbox-content--navbar--icons img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .chatbox-content-body{
     display: flex;
     flex-direction: column;
@@ -888,6 +896,11 @@ width: 30%;
     background-color: white;
     border-radius: 20px;
     width: 30%;
+}
+
+.chatbox-contacts-left--header {
+    display: flex;
+    flex-direction: column;
 }
 
 /* CONTACT PAGE */
