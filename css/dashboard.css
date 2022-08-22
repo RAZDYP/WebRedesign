@@ -365,16 +365,12 @@ justify-content:center;
 margin-bottom: 0px;
 }
 
-input.sender-id-checkbox {
-    /* width:100px; */
-}
-
 .receivers-list{
     background-color: #E9E9E9;
-    padding: 10px;
+    padding: 3%;
     border-radius: 10px;
     width: 60%;
-    
+    height: max-content;
 }
 .receivers-list p{
     margin-bottom: 3px;
@@ -507,7 +503,8 @@ input.sender-id-checkbox {
 .mobile-splash-template select{
     border-radius: 7px;
     width: 50%;
-    padding: 3px;
+    padding: 1%;
+    height: max-content;
 }
 
 .facebook-link{
@@ -542,20 +539,29 @@ width: 30%;
     background-color: black;
     color: white;
     display: inline-block;
-    width: 21%;
+    width: 25%;
     display: flex;
     flex-direction: row;
-    column-gap: 5px;
+    column-gap: 5%;
     align-items: center;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom:5px;
-    padding-right: 7px;
+    padding: 1%;
     border-radius: 5px;
-
+    height: max-content;
+    cursor: pointer;
 }
+
+.pick-file input {
+    width: 100%;
+}
+
 .pick-file img{
     filter: invert(100%);
+    height: max-content;
+}
+
+.pick-file label {
+    font-size: 1vw;
+    cursor: pointer;
 }
 
 
@@ -564,8 +570,8 @@ width: 30%;
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 20px;
+    width: 5%;
+    height: max-content;
   }
   
   /* Hide default HTML checkbox */
@@ -591,9 +597,9 @@ width: 30%;
   .slider:before {
     position: absolute;
     content: "";
-    height: 15px;
-    width: 15px;
-    left: 4px;
+    height: 1%;
+    width: 1%;
+    left: 4%;
     bottom:2.5px;
     background-color: rgb(230, 33, 33);
     -webkit-transition: .4s;
@@ -617,7 +623,7 @@ width: 30%;
   
   /* Rounded sliders */
   .slider.round {
-    border-radius: 34px;
+    border-radius: 3.4%
   }
   
   .slider.round:before {
@@ -628,13 +634,15 @@ width: 30%;
   .number-pool{
     display: flex;
     flex-direction: row;
-    column-gap: 15px;
+    column-gap: 1.5%;
     align-items: center;
     justify-content: flex-start;
+    height: max-content;
   }
 
   .number-pool p{
     margin-bottom: 0px;
+    font-size: 1vw;
   }
 
   .dashboard-content-section-3-body-right{
@@ -810,7 +818,7 @@ width: 30%;
     background-color: #e6e6e6;
     border-radius: 30px;
     width: 100%;
-    padding: 30px 20px 30px 20px;
+    padding: 3% 2% 3% 2%;
     font-size: 1vw;
 }
 
@@ -830,7 +838,7 @@ width: 30%;
     row-gap: 10px;
     background-color: white;
     width: 40%;
-    padding: 20px;
+    padding: 2%;
     border-radius: 20px;
 }
 
@@ -838,7 +846,7 @@ width: 30%;
     display: flex;
     flex-direction: row;
     column-gap: 2px;
-    height: 50px;
+    height: max-content;
     align-items: center;
     justify-content: flex-start;
    padding: 0px;
@@ -1284,6 +1292,7 @@ justify-content:center;
 .actions img:hover {
 transform: scale(1.1);
 transition: 0.5s;
+cursor: pointer;
 }
 
 
