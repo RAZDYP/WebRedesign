@@ -40,23 +40,23 @@
     <div class="dashboard">
         <div class="dashboard-navbaar">
             <div class="dashboard-navbaar--icon">
-                <img src="../img/SMS-iT-NEW-LOGO-MEDIUM.png" width="90%" height="50%" />
+                <img src="../img/SMS-iT-NEW-LOGO-MEDIUM.png" width="100%" height="100%" />
             </div>
             <div class="dashboard-navbaar--links">
                 <button class="dashboard-navbaar--links--button active" id="dashboard-content--dashboard">
-                    <img src="../img/asdad/icons2-22.png" width="20%" />
+                    <img src="../img/asdad/icons2-22.png" width="15%" />
                     <p>Dashboard</p>
                 </button>
                 <button class="dashboard-navbaar--links--button" id="dashboard-content--chatbox">
-                    <img src="../img/asdad/icons2-23.png" width="20%" />
+                    <img src="../img/asdad/icons2-23.png" width="15%" />
                     <p>Messages</p>
                 </button>
                 <button class="dashboard-navbaar--links--button" id="dashboard-content-activity">
-                    <img src="../img/asdad/icons2-24.png" width="20%" />
+                    <img src="../img/asdad/icons2-24.png" width="15%" />
                     <p>Activity Logs</p>
                 </button>
                 <button class="dashboard-navbaar--links--button" id="dashboard-content-contact">
-                    <img src="../img/asdad/icons2-20.png" width="20%"/>
+                    <img src="../img/asdad/icons2-20.png" width="15%"/>
                     <p>Contacts</p>
                 </button>
             </div>
@@ -206,31 +206,31 @@
                                 </div>
                                 <div class="message-groups--filter--city">
                                     <p style="font-weight: 600;">City</p>
-                                    <input type="text" placeholder="Enter City" />
+                                    <input type="text" placeholder="Enter City" class="input-border-radius" />
                                 </div>
                                 <div class="message-groups--filter--state">
                                     <p style="font-weight: 600;">State</p>
-                                    <input type="text" placeholder="Enter State" />
+                                    <input type="text" placeholder="Enter State" class="input-border-radius"/>
                                 </div>
                                 <div class="message-groups--filter--postal">
                                     <p style="font-weight: 600;">Postal Code</p>
-                                    <input type="text" placeholder="Enter Postal Code" />
+                                    <input type="text" placeholder="Enter Postal Code" class="input-border-radius" />
                                 </div>
                                 <div class="message-groups--filter--delivery">
                                     <p style="font-weight: 600;">Schedule Delivery</p>
-                                    <input type="datetime-local" placeholder="Enter A Date">
+                                    <input type="datetime-local" placeholder="Enter A Date" class="input-border-radius" />
                                 </div>
                             </div>
                             <div class="message-contacts hide" id="message-contacts">
                                 <div class="message-contacts--number">
                                     <p>Name | Group Name | Phone Number</p>
-                                    <select>
+                                    <select class="input-border-radius">
                                         <option>123456789</option>
                                     </select>
                                 </div>
                                 <div class="message-contacts--delivery">
                                     <p>Schedule Delivery</p>
-                                    <input type="datetime-local" placeholder="Enter A Date">
+                                    <input type="datetime-local" placeholder="Enter A Date" class="input-border-radius">
                                 </div>
                             </div>
                             <div class="message-manual hide" id="message-manual">
@@ -275,7 +275,7 @@
                                 <p>Number Pool</p>
                                 <label class="switch">
                                     <input type="checkbox">
-                                    <span class="slider round"></span>
+                                    <span class="slider round" style="background-color: #ccc; color: #22B573;"></span>
                                 </label>
                                 <img src="../Icons/question-icon.png" width="10%" />
                             </div>
@@ -884,8 +884,8 @@
                         </div>
                         <div class="activity-navbar--icons">
                             <img src="../img/icons/icons-copy.png" title="Copy" />
-                            <img src="../img/icons/icons-xx.png" title="Print" />
-                            <img src="../img/icons/icons-printer.png" title="Excel" />
+                            <img src="../img/icons/icons-xx.png" title="Excel" />
+                            <img src="../img/icons/icons-printer.png" title="Print" />
                             <img src="../img/icons/icons-3-bars.png" title="Columns" />
                         </div>
                     </div>
@@ -1034,11 +1034,11 @@
                 <div class="modal-header">
                     <div class="modal-group--header">
                         <div class="modal-group--header--title">
-                            <img src="../img/delievered.png" width="20%" height="20%" />
+                            <img src="../img/icons/icons-05.png" width="10%" height="20%" />
                             <p style="font-weight: 600;">Create Group Form</p>
                         </div>
                     </div>
-                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding:2% ;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-group--body">
@@ -1067,7 +1067,7 @@
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
-                                    <span class="slider round"></span>
+                                    <span class="slider round" style="background-color: #ccc;"></span>
                                 </label>
                             </div>
                         </div>
@@ -1088,7 +1088,7 @@
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
-                                    <span class="slider round"></span>
+                                    <span class="slider round" style="background-color: #ccc;"></span>
                                 </label>
                             </div>
                         </div>
@@ -1097,15 +1097,14 @@
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
-                                    <span class="slider round"></span>
+                                    <span class="slider round" style="background-color: #ccc;"></span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                 <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
         </div>
@@ -1119,7 +1118,7 @@
                 <div class="modal-header">
                     <div class="modal-import--header">
                         <div class="modal-import--header--title">
-                            <img src="../img/delievered.png" width="20%" height="20%" />
+                            <img src="../img/icons/icons-05.png" width="10%" height="20%" />
                             <p style="font-weight: 600;">GET NEW NUMBER</p>
                         </div>
                     </div>
@@ -1180,8 +1179,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    
+                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
         </div>
@@ -1199,11 +1198,11 @@
                 <div class="modal-header">
                     <div class="modal-import--header">
                         <div class="modal-import--header--title">
-                            <img src="../img/delievered.png" width="20%" height="20%" />
+                            <img src="../img/icons/icons-05.png" width="10%" height="20%" />
                             <p style="font-weight: 600;">Import Contacts</p>
                         </div>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding:2% ;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-import--body">
@@ -1230,15 +1229,15 @@
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
-                                    <span class="slider round"></span>
+                                    <span class="slider round" style="background-color: #ccc;"></span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                   
+                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
 
@@ -1257,11 +1256,7 @@
                         <img src="../Icons/contactsicons-59.png" alt="logo" width="10%">
                         <p style="font-weight: 600;">SEND A SINGLE MESSAGE</p>
                     </div>
-                    <div class="modal-header--close">
-                        <button type="button" data-bs-dismiss="modal">
-                            <img src="../Icons/close-icon.png" alt="close" width="80%">
-                        </button>
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body--inputs">
@@ -1291,14 +1286,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-header--title">
-                        <img src="../Icons/edit-icon.png" alt="logo" width="20%">
+                        <img src="../img/icons/icons-05.png" width="10%" height="20%" />
                         <p style="font-weight: 600; font-size: 18px;">Edit Contact</p>
                     </div>
-                    <div class="modal-header--close">
-                        <button type="button" data-bs-dismiss="modal">
-                            <img src="../Icons/close-icon.png" alt="close" width="70%">
-                        </button>
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body-edit-inputs">
@@ -1367,8 +1358,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    
+                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
 
@@ -1381,14 +1372,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-header--title">
-                        <img src="../Icons/email-icon.png" alt="logo" width="20%">
+                         <img src="../img/icons/icons-05.png" width="10%" height="20%" />
                         <p style="font-weight: 600;">SEND EMAIL</p>
                     </div>
-                    <div class="modal-header--close">
-                        <button type="button" data-bs-dismiss="modal">
-                            <img src="../Icons/close-icon.png" alt="close" width="80%">
-                        </button>
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body--inputs">
@@ -1433,8 +1420,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    
+                        <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
 
