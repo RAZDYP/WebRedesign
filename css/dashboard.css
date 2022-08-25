@@ -244,7 +244,7 @@ justify-content:center;
     height: 100%;
     margin-left: 20px;
     border-radius: 30px;
-    background-color: #E9E9E9;
+    background-color: #F2F2F2;
     padding: 30px;
     row-gap: 20px;
     font-size: 1vw;
@@ -276,6 +276,7 @@ justify-content:center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 2%;
 }
 .send-message-from p{
     margin-bottom: 0px;
@@ -290,6 +291,7 @@ justify-content:center;
 .send-message-from select
 {
     border-radius: 10px;
+    width: 70%;
 }
 
 .credits-needed{
@@ -309,6 +311,7 @@ justify-content:center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 2%;
 }
 
 .credits-needed p{
@@ -340,6 +343,7 @@ justify-content:center;
     flex-direction: row;
     align-items: center;
     width: 45%;
+    column-gap: 2%;
 }
 
 .local-time p{
@@ -397,7 +401,7 @@ margin-bottom: 0px;
 }
 
 .receivers-list{
-    background-color: #E9E9E9;
+    background-color: #F2F2F2;
     padding: 3%;
     border-radius: 10px;
     width: 60%;
@@ -478,8 +482,8 @@ margin-bottom: 0px;
 .message-manual {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 85%;
     row-gap: 15px;
 }
@@ -487,6 +491,7 @@ margin-bottom: 0px;
 .message-manual--phone {
     display: flex;
     flex-direction: column;
+
 }
 .message-manual--number textarea{
     padding: 2%;
@@ -579,7 +584,7 @@ width: 30%;
     background-color: black;
     color: white;
     display: inline-block;
-    width: 25%;
+    width: 21%;
     display: flex;
     flex-direction: row;
     column-gap: 5%;
@@ -594,13 +599,13 @@ width: 30%;
     width: 100%;
 }
 
-.pick-file img{
-    filter: invert(100%);
-    height: max-content;
-}
 
+.pick-file-image img{
+ width: 30%;
+ height: 100%;
+}
 .pick-file label {
-    font-size: 1vw;
+   
     cursor: pointer;
 }
 
@@ -695,7 +700,7 @@ width: 30%;
   }
 
   .dashboard-content-section-3-body-right textarea{
-    background-color: #E9E9E9;
+    background-color: #F2F2F2;
     border-radius: 10px;
     border: none;
     width: 100%;
@@ -757,7 +762,7 @@ width: 30%;
   .number-of-characters-right-top-bottoms button {
     border: none;
     border-radius: 7px;
-    background-color: black;
+    background-color: #333333;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -766,7 +771,7 @@ width: 30%;
   .send-message-btn{
     border: none;
     border-radius: 7px;
-    background-color:#32804e;
+    background-color:#22b573;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -826,7 +831,7 @@ width: 30%;
     justify-content: space-between;
     background-color: #e6e6e6;
     border-radius: 15px;
-    padding: 8px;
+    padding: 0.9%;
     margin-left: 10px;
     
 }
@@ -849,8 +854,9 @@ width: 30%;
     background-color: #E6E6E6;
     align-items: center;
     justify-content: space-between;
-    padding: 2px;
+    padding: 0.5%;
     border-radius: 15px;
+    height: max-content;
     width: auto;
     margin-right: 9px;
     
@@ -882,6 +888,10 @@ width: 30%;
     font-weight: 600;
     /* border-radius: 30px; */
     /* background-color: aqua; */
+}
+.chatbox-content-body-title{
+    padding-bottom: 1%;
+    font-weight: 600;
 }
 
 .chatbox-content-body-main-contacts{
@@ -1062,14 +1072,14 @@ width: 30%;
     align-items: center;
     width: 60%;
     background-color: #e6e6e6;
-    padding: 1%;
-    border-radius: 20px;
+    padding: 0.5%;
+    border-radius: 15px;
     height: max-content;
     /* object-fit: contain; */
 }
 
 .contact-page-navbar-icons img {
-    width: 7%;
+    width: 7.5%;
     height: max-content;
 }
 .contact-page-navbar-icons > img:hover{
@@ -1084,8 +1094,8 @@ width: 30%;
     align-items: center;
     width: 40%;
     background-color: white;
-    padding: 0.5%;
-    border-radius: 20px;
+    padding: 0.6%;
+    border-radius: 15px;
     height: max-content;
 }
 
@@ -1102,7 +1112,7 @@ width: 30%;
     border-radius: 15px;
     background-color: #e6e6e6;
     border: none;
-    padding: 3%;
+    padding: 2%;
     width: 50%;
     font-size: 1vw;
 }
@@ -1483,7 +1493,7 @@ cursor: pointer;
 }
 
 .activity-navbar--icons > img {
-    width: 6%;
+    width: 6.5%;
 }
 
 .activity-navbar--icons > img:hover {
