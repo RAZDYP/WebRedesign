@@ -25,3 +25,12 @@ groupsRadio.addEventListener("click", function() {
     manualMessage.classList.add("hide");
     groupsMessage.classList.remove("hide");
 })
+
+function senderId() {
+    var checkbox = document.getElementById("sender-id-checkbox");
+    if(checkbox.checked == true){
+        $('.sender-id-input').removeClass('hide');
+    }else{
+        $('.sender-id-input').addClass('hide');
+    }
+}
