@@ -20,6 +20,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="../css/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="../css/jquery.webui-popover.css" />
     <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
@@ -56,7 +57,7 @@
                     <p>Activity Logs</p>
                 </button>
                 <button class="dashboard-navbaar--links--button" id="dashboard-content-contact">
-                    <img src="../img/asdad/icons2-20.png" width="15%"/>
+                    <img src="../img/asdad/icons2-20.png" width="15%" />
                     <p>Contacts</p>
                 </button>
             </div>
@@ -70,7 +71,7 @@
                                 <img src="../Icons/send-icon.png" />
                                 <div class="dashboard-card--info--amount">
                                     <p>Received</p>
-                                    <p style="color:green; font-weight: 700;">100000</p>
+                                    <p style="color:#508AFF; font-weight: 700;">100000</p>
                                 </div>
                             </div>
                             <div class="dashboard-card--graph">
@@ -120,7 +121,7 @@
                                 <img src="../img/queued.png" width="20%" height="20%" />
                                 <div class="dashboard-card--info--amount">
                                     <p>Queued</p>
-                                    <p style="color: yellow; font-weight: 700;">100000</p>
+                                    <p style="color: #F2C60F; font-weight: 700;">100000</p>
                                 </div>
                             </div>
                             <div class="dashboard-card--graph">
@@ -142,7 +143,9 @@
                     </div>
                 </div>
                 <div class="dashboard-content-section-2">
-                    <button data-bs-toggle="modal" data-bs-target="#myModal1">Create Group</button>
+                    <button data-bs-toggle="modal" data-bs-target="#myModal1">
+                        <p>Create Group</p>
+                    </button>
                     <button data-bs-toggle="modal" data-bs-target="#myModal2">Get New Number</button>
                     <button data-bs-toggle="modal" data-bs-target="#myModal3">Import Contacts</button>
                 </div>
@@ -163,7 +166,7 @@
                                 <p style="font-weight: 600;">Credits Needed</p>
                             </div>
                             <p style="font-weight: 600;">123</p>
-                        </div> 
+                        </div>
                         <div class="local-time">
                             <div class="local-time-with-icon">
                                 <img src="../Icons/earth-icon.png" />
@@ -177,11 +180,23 @@
                             <div class="dashboard-content-sender">
                                 <div class="sender-id">
                                     <p> Send from alphanumeric Sender ID</p>
-                                    <input type="checkbox" onClick="senderId()" id="sender-id-checkbox" class="sender-id-checkbox" style="color: black;">
-                                    <img src="../Icons/question-icon.png" width="10%" />
+                                    <input type="checkbox" onClick="senderId()" id="sender-id-checkbox"
+                                        class="sender-id-checkbox" style="color: black;">
+
+                                    <div class="dropdown">
+                                        <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                        <div class="dropdown-content">
+                                            <p>You can send from an alphanumeric sender ID, however you must offer your
+                                                users the ability to opt out by writing to your support team, calling
+                                                your support phone line, or texting STOP to your actual
+                                                number.<br /><br />We recommend that you provide your users with a clear
+                                                description in your terms of services or when they intially sign-up.</p>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="sender-id-input hide" id="sender-id-input">
-                                    <input type="text" placeholder="Enter Sender ID" style="padding-left: 5%;"/>
+                                    <input type="text" placeholder="Enter Sender ID" style="padding-left: 5%;" />
                                 </div>
                             </div>
                             <div class="receivers-list">
@@ -190,7 +205,7 @@
                                     <div class="receivers-list-radio-checklist">
                                         <input type="radio" id="groups" value="groups" name="receivers-list--buttons"
                                             style="color: black;">
-                                        <p> Groups</p>
+                                        <p>Groups</p>
                                     </div>
                                     <div class="receivers-list-radio-checklist">
                                         <input type="radio" id="contacts" value="contacts"
@@ -215,7 +230,7 @@
                                 </div>
                                 <div class="message-groups--filter--state">
                                     <p style="font-weight: 600;">State</p>
-                                    <input type="text" placeholder="Enter State" class="input-border-radius"/>
+                                    <input type="text" placeholder="Enter State" class="input-border-radius" />
                                 </div>
                                 <div class="message-groups--filter--postal">
                                     <p style="font-weight: 600;">Postal Code</p>
@@ -223,7 +238,8 @@
                                 </div>
                                 <div class="message-groups--filter--delivery">
                                     <p style="font-weight: 600;">Schedule Delivery</p>
-                                    <input type="datetime-local" placeholder="Enter A Date" class="input-border-radius" />
+                                    <input type="datetime-local" placeholder="Enter A Date"
+                                        class="input-border-radius" />
                                 </div>
                             </div>
                             <div class="message-contacts hide" id="message-contacts">
@@ -262,8 +278,15 @@
                             <div class="facebook-link">
                                 <button>Facebook</button>
                                 <input type="checkbox" style="color: black;">
-                                <img src="../Icons/question-icon.png" width="35%" />
-
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>Checking this box will post the message to your Facebook wall after clicking
+                                            send. If you are sending multiple MMS images, then only the 1st image will
+                                            be posted to your wall
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="sms-mms-checkbox">
                                 <p>SMS</p>
@@ -273,10 +296,10 @@
                             </div>
                             <div class="pick-file">
                                 <input type="file" name="uploadfile" id="img" style="display:none;"></input>
-                                <label class="pick-file-image" for="img" >Pick File
-                                    <img src="../img/New folder (3)/icons-11.png"  height="100%" width="20%"/>
+                                <label class="pick-file-image" for="img">Pick File
+                                    <img src="../img/New folder (3)/icons-11.png" height="100%" width="20%" />
                                 </label>
-                                
+
                             </div>
                             <div class="number-pool">
                                 <p>Number Pool</p>
@@ -284,7 +307,19 @@
                                     <input type="checkbox">
                                     <span class="slider round" style="background-color: #ccc; color: #22B573;"></span>
                                 </label>
-                                <img src="../Icons/question-icon.png" width="10%" />
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p> 1 credit is charged for each 160 character segment. If you have a message
+                                            that is 300 characters, and you are sending to 10 people, 20 credits will be
+                                            deducted (2 credits for each person).<br /><br /><b>NOTE:</b> Messages
+                                            containing non-GSM(unicode) characters will be charged 1 credit for each 70
+                                            character segment.
+                                        </p>
+                                    </div>
+
+
+                                </div>
                             </div>
                         </div>
                         <div class="dashboard-content-section-3-body-right">
@@ -325,12 +360,11 @@
                         </div>
                         <div class="chatbox-content--navbar--icons">
                             <img src="../img/asdad/icons2-14.png" width="7%" height="7%" title="Phonebook"
-                            data-bs-toggle="modal" data-bs-target="#open-note-more"
-                            />
+                                data-bs-toggle="modal" data-bs-target="#open-note-more" />
                             <img src="../img/asdad/icons2-15.png" width="7%" height="4%" title="Edit Contact" />
-                            <img src="../img/asdad/icons2-16.png" width="7%" height="4%" title="Delete Contact"/>
-                            <img src="../img/asdad/icons2-17.png" width="7%" height="4%" title="Delete Chat"/>
-                            <img src="../img/asdad/icons2-19.png" width="7%" height="4%" title="Schedule Message"/>      
+                            <img src="../img/asdad/icons2-16.png" width="7%" height="4%" title="Delete Contact" />
+                            <img src="../img/asdad/icons2-17.png" width="7%" height="4%" title="Delete Chat" />
+                            <img src="../img/asdad/icons2-19.png" width="7%" height="4%" title="Schedule Message" />
                         </div>
                     </div>
                     <div class="chatbox-content-body">
@@ -360,7 +394,8 @@
                                                                     <li class="p-2 border-bottom">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
                                                                                         alt="avatar"
@@ -387,7 +422,8 @@
                                                                     <li class="p-2 border-bottom">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
                                                                                         alt="avatar"
@@ -414,7 +450,8 @@
                                                                     <li class="p-2 border-bottom">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
                                                                                         alt="avatar"
@@ -440,7 +477,8 @@
                                                                     <li class="p-2 border-bottom">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
                                                                                         alt="avatar"
@@ -467,7 +505,8 @@
                                                                     <li class="p-2 border-bottom">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
                                                                                         alt="avatar"
@@ -493,7 +532,8 @@
                                                                     <li class="p-2">
                                                                         <a href="#!"
                                                                             class="d-flex justify-content-center chatbox-contacts-list-left">
-                                                                            <div class="d-flex flex-row chatbox-contacts-list-info">
+                                                                            <div
+                                                                                class="d-flex flex-row chatbox-contacts-list-info">
                                                                                 <div class="chatbox-contacts-left-img">
                                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
                                                                                         alt="avatar"
@@ -526,7 +566,8 @@
                                                     <section style="background-color: #e6e6e6; width: 100%;">
 
 
-                                                        <div class="row d-flex justify-content-center" style="width: 100%;">
+                                                        <div class="row d-flex justify-content-center"
+                                                            style="width: 105%;">
                                                             <div class="col-md-12 col-lg-12 col-xl-12">
 
                                                                 <div class="card" id="chat2"
@@ -540,7 +581,8 @@
                                                                         data-mdb-perfect-scrollbar="true"
                                                                         style=" height:400px; overflow-y:scroll; padding-left: 2%; padding-right: 2%; padding-top: 5px;">
 
-                                                                        <div class="d-flex flex-row justify-content-start">
+                                                                        <div
+                                                                            class="d-flex flex-row justify-content-start">
                                                                             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
                                                                                 alt="avatar 1"
                                                                                 style="width: 9%; height: 100%;">
@@ -712,13 +754,15 @@
                                                                             placeholder="Type message"
                                                                             style="border: none; background-color: #F2F2F2; font-style: italic;">
                                                                         <a class="ms-3 text-muted" href="#!">
-                                                                            <i class="fa-solid fa-image" data-bs-toggle="modal" data-bs-target="#upload-image"></i>
+                                                                            <i class="fa-solid fa-image"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#upload-image"></i>
                                                                         </a>
                                                                         <a class="ms-3 text-muted" href="#!">
                                                                             <i class="fas fa-paperclip"></i>
                                                                         </a>
                                                                         <a class="ms-3 text-muted" href="#!">
-                                                                            <i class="bi bi-1-circle"></i>
+                                                                            <i class="bi bi-columns-gap"></i>
                                                                         </a>
                                                                         <a class="ms-3" href="#!">
                                                                             <i class="fas fa-paper-plane"></i>
@@ -742,18 +786,12 @@
                 <div class="contact-page">
                     <div class="contact-page-navbar">
                         <div class="contact-page-navbar-icons">
-                            <img src="../img/New folder (3)/contactsicons-51.png"
-                                title="Subscribers" />
-                            <img src="../img/New folder (3)/contactsicons-52.png"
-                                title="Un-Subscribers" />
-                            <img src="../img/New folder (3)/contactsicons-53.png"
-                                title="Subs bye SMS" />
-                            <img src="../img/New folder (3)/contactsicons-54.png"
-                                title="Subs by Widget" />
-                            <img src="../img/New folder (3)/contactsicons-55.png"
-                                title="Subs by Kiosk" />
-                            <img src="../img/New folder (3)/contactsicons-56.png"
-                                title="Imports" />
+                            <img src="../img/New folder (3)/contactsicons-51.png" title="Subscribers" />
+                            <img src="../img/New folder (3)/contactsicons-52.png" title="Un-Subscribers" />
+                            <img src="../img/New folder (3)/contactsicons-53.png" title="Subs bye SMS" />
+                            <img src="../img/New folder (3)/contactsicons-54.png" title="Subs by Widget" />
+                            <img src="../img/New folder (3)/contactsicons-55.png" title="Subs by Kiosk" />
+                            <img src="../img/New folder (3)/contactsicons-56.png" title="Imports" />
                         </div>
                         <div class="contact-page-navbar-page-search">
                             <p>Page Search</p>
@@ -795,9 +833,9 @@
                                         </option>
                                     </select>
                                 </div>
-                                <p class="contact-search-no-border-right-reset">
+                                <button class="contact-search-no-border-right-reset">
                                     Reset Filters
-                                </p>
+                                </button>
                             </div>
                         </div>
                         <div class="contact-page-mid-div-search-button">
@@ -833,13 +871,14 @@
                                 <p class="source">SMS</p>
                                 <div class="contact-page-last-div-first-row-right-icons actions">
                                     <img src="../img/icons/icons-message.png" style="width:14% ;"
-                                        title="Download Chat History" data-bs-toggle="modal" data-bs-target="#single-sms"/>
+                                        title="Download Chat History" data-bs-toggle="modal"
+                                        data-bs-target="#single-sms" />
                                     <img src="../img/New folder (3)/message-two.png" style="width:14% ;"
-                                        title="View Notes" data-bs-toggle="modal" data-bs-target="#send-email"/>
+                                        title="View Notes" data-bs-toggle="modal" data-bs-target="#send-email" />
                                     <img src="../img/New folder (3)/contactsicons-47.png" style="width:14% ;"
                                         title="Schedule Message" />
                                     <img src="../img/New folder (3)/contactsicons-48.png" style="width:14% ;"
-                                        title="Edit Contact" data-bs-toggle="modal" data-bs-target="#edit-contact"/>
+                                        title="Edit Contact" data-bs-toggle="modal" data-bs-target="#edit-contact" />
                                     <img src="../img/New folder (3)/contactsicons-49.png" style="width:14% ;"
                                         title="Delete Contact" />
                                     <img src="../img/New folder (3)/contactsicons-50.png" style="width:14% ;"
@@ -859,13 +898,14 @@
                                 <p class="source">SMS</p>
                                 <div class="contact-page-last-div-first-row-right-icons actions">
                                     <img src="../img/icons/icons-message.png" style="width:14% ;"
-                                        title="Download Chat History" data-bs-toggle="modal" data-bs-target="#single-sms"/>
+                                        title="Download Chat History" data-bs-toggle="modal"
+                                        data-bs-target="#single-sms" />
                                     <img src="../img/New folder (3)/message-two.png" style="width:14% ;"
-                                        title="View Notes" data-bs-toggle="modal" data-bs-target="#send-email"/>
+                                        title="View Notes" data-bs-toggle="modal" data-bs-target="#send-email" />
                                     <img src="../img/New folder (3)/contactsicons-47.png" style="width:14% ;"
                                         title="Schedule Message" />
                                     <img src="../img/New folder (3)/contactsicons-48.png" style="width:14% ;"
-                                        title="Edit Contact" data-bs-toggle="modal" data-bs-target="#edit-contact"/>
+                                        title="Edit Contact" data-bs-toggle="modal" data-bs-target="#edit-contact" />
                                     <img src="../img/New folder (3)/contactsicons-49.png" style="width:14% ;"
                                         title="Delete Contact" />
                                     <img src="../img/New folder (3)/contactsicons-50.png" style="width:14% ;"
@@ -993,8 +1033,10 @@
                                     </div>
                                     <div class="activity-page-last-div-first-row-right-icons"
                                         style="width: 30%; display: flex; justify-content:flex-start; column-gap: 10px;">
-                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%" title="Read">
-                                        <img src="../img/icons/icons-message.png" width="20%" height="20%" title="Send SMS">
+                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%" title="Read"
+                                            data-bs-toggle="modal" data-bs-target="#activity-logs">
+                                        <img src="../img/icons/icons-message.png" width="20%" height="20%"
+                                            title="Send SMS" data-bs-toggle="modal" data-bs-target="#single-sms">
                                     </div>
 
                                 </div>
@@ -1015,8 +1057,10 @@
                                     </div>
                                     <div class="activity-page-last-div-first-row-right-icons"
                                         style="width: 30%; display: flex; justify-content:flex-start; column-gap: 10px;">
-                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%" title="Read">
-                                        <img src="../img/icons/icons-message.png" width="20%" height="20%" title="Send SMS">
+                                        <img src="../img/icons/icons-eye.png" width="20%" height="20%" title="Read"
+                                            data-bs-toggle="modal" data-bs-target="#activity-logs">
+                                        <img src="../img/icons/icons-message.png" width="20%" height="20%"
+                                            title="Send SMS" data-bs-toggle="modal" data-bs-target="#single-sms">
                                     </div>
 
                                 </div>
@@ -1044,7 +1088,8 @@
                             <p style="font-weight: 600;">Create Group Form</p>
                         </div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding-right: 3.5%; padding-top:0% ;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="padding-right: 3.5%; padding-top:0% ;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-group--body">
@@ -1110,7 +1155,8 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                 <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
         </div>
@@ -1128,7 +1174,8 @@
                             <p style="font-weight: 600;">GET NEW NUMBER</p>
                         </div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding-right: 3.5%; padding-top:0% ;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="padding-right: 3.5%; padding-top:0% ;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-number-body">
@@ -1185,8 +1232,9 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                    
-                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
+
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
         </div>
@@ -1208,7 +1256,8 @@
                             <p style="font-weight: 600;">Import Contacts</p>
                         </div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding-right: 3.5%; padding-top:0% ;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="padding-right: 3.5%; padding-top:0% ;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-import--body">
@@ -1242,8 +1291,9 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                   
-                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
+
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
 
@@ -1262,7 +1312,8 @@
                         <img src="../Icons/contactsicons-59.png" alt="logo" width="12%" height="20%">
                         <p style="font-weight: 600;">SEND A SINGLE MESSAGE</p>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0px;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="margin: 0px;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body--inputs">
@@ -1278,7 +1329,8 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border:none;">Submit</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border:none;">Submit</button>
                 </div>
             </div>
 
@@ -1286,14 +1338,14 @@
     </div>
     <div id="edit-contact" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-
-            <!-- Modal content--> 
+            <div class="modal-content">
                 <div class="modal-header border-0">
                     <div class="modal-header--title">
                         <img src="../img/New folder (3)/contactsicons-57.png" width="18%" height="20%" />
-                        <p style="font-weight: 600; font-size: 18px;">Edit Contact</p>
+                        <p style="font-weight: 600;">EDIT CONTACT</p>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0px; margin-right: 1%;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="margin: 0px; margin-right: 1%;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body-edit-inputs">
@@ -1362,11 +1414,11 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                    
-                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border: none;">Submit</button>
+
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border: none;">Submit</button>
                 </div>
             </div>
-
         </div>
     </div>
     <div id="send-email" class="modal fade" role="dialog">
@@ -1376,10 +1428,11 @@
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <div class="modal-header--title">
-                         <img src="../img/New folder (3)/contactsicons-58.png" width="18%" height="20%" />
+                        <img src="../img/New folder (3)/contactsicons-58.png" width="18%" height="20%" />
                         <p style="font-weight: 600;">SEND EMAIL</p>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0px; margin-right: 1%;"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="margin: 0px; margin-right: 1%;"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body--inputs">
@@ -1410,8 +1463,9 @@
                         <div class="modal-body--input">
                             <p style="font-weight: 600;">Upload Attachment</p>
                             <div class="upload-image-buttons--email">
-                                <label for="upload-image-button-email" class="upload-image-button-email">Select Image</label>
-                                <input type="file" id="upload-image-button-email" style="display: none;"/>
+                                <label for="upload-image-button-email" class="upload-image-button-email">Select
+                                    Image</label>
+                                <input type="file" id="upload-image-button-email" style="display: none;" />
                             </div>
                         </div>
                         <div class="modal-body--input">
@@ -1427,8 +1481,51 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                    
-                    <button type="button" class="btn btn-primary" style="background-color: #22B573; border:none;">Submit</button>
+
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border:none;">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="activity-logs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-header--title">
+                        <img src="../img/New folder (3)/contactsicons-58.png" width="18%" height="20%" />
+                        <p style="font-weight: 600;">Logs</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="margin: 0px; margin-right: 1%;"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body--inputs">
+                        <div class="modal-body--input">
+                            <p style="font-weight: 600;">Phone Number</p>
+                            <p style="text-align: left;">12092315943</p>
+                        </div>
+                        <div class="modal-body--input">
+                            <p style="font-weight: 600;">Text Message</p>
+                            <p style="text-align: left;">This is another test message.</p>
+                        </div>
+                        <div class="modal-body--input">
+                            <p style="font-weight: 600;">Route</p>
+                            <p style="text-align: left;">inbox</p>
+                        </div>
+                        <div class="modal-body--input">
+                            <p style="font-weight: 600;">Created</p>
+                            <p style="text-align: left;">2022-08-17 13:19:21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #22B573; border:none;">Submit</button>
                 </div>
             </div>
 
@@ -1497,7 +1594,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#open-note">Add Note</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#open-note">Add
+                        Note</button>
                 </div>
             </div>
 
@@ -1526,7 +1624,8 @@
                         </div>
                         <div class="upload-image-buttons">
                             <label for="upload-image-button" class="upload-image-button">Select Image</label>
-                            <input type="file" onchange="loadFile(event)" id="upload-image-button" style="display: none;"/>
+                            <input type="file" onchange="loadFile(event)" id="upload-image-button"
+                                style="display: none;" />
                             <button type="button" class="btn btn-primary">Cancel</button>
                         </div>
                     </div>
@@ -1539,7 +1638,7 @@
 
         </div>
     </div>
-    
+
     <!-- CHATBOX MODAL END -->
 
 
