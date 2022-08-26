@@ -324,7 +324,21 @@
                         </div>
                         <div class="dashboard-content-section-3-body-right">
                             <div>
-                                <p style="font-weight: 600;">Message</p>
+                                <div style="margin-bottom: 5px;">
+                                    <span style="font-weight: 600; ">Message</span>
+                                    <div class="dropdown">
+                                        <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                1 credit is charged for each 160 character segment. If you have a
+                                                message that is 300 characters, and you are sending to 10 people, 20
+                                                credits will be deducted (2 credits for each
+                                                person).<br /><br /><b>NOTE:</b> Messages containing non-GSM(unicode)
+                                                characters will be charged 1 credit for each 70 character segment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <textarea rows="14"></textarea>
                             </div>
                             <div>
@@ -1085,7 +1099,9 @@
                     <div class="modal-group--header">
                         <div class="modal-group--header--title">
                             <img src="../Icons/iconsD-69.png" width="10%" height="20%" />
-                            <p style="font-weight: 600;">Create Group Form</p>
+                            <div>
+                                <p style="font-weight: 600;">Create Group Form</p>
+                            </div>
                         </div>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
@@ -1094,27 +1110,80 @@
                 <div class="modal-body">
                     <div class="modal-group--body">
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Copy Members From Existing Group</p>
+                            <div>
+                                <span style="font-weight: 600; ">Copy Members From Existing
+                                    Group</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>Select an existing group if you want use that group as a template to create
+                                            your new group. All fields from the group selected will be pre-populated
+                                            with the exception of group name and keyword. You must give those unique
+                                            names. If you are copying from a MMS group type, you must select new images.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <select>
                                 <option>Please select A Group</option>
                             </select>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Enter Group Name</p>
+                            <p style="font-weight: 600; ">Enter Group Name *</p>
                             <input type="text" placeholder="Group Name" />
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Keyword</p>
+                            <div>
+                                <span style="font-weight: 600; ">Keyword *</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>Keyword that subscriber will text in to your number to join your contact
+                                            list.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <input type="text" placeholder="Keyword" />
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Group Type</p>
+                            <div>
+                                <span style="font-weight: 600; ">Group Type</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p><b>Coupon</b> - User can continually text in the keyword to receive the
+                                            auto-reply message. e.g. You may update the message weekly or monthly with a
+                                            new coupon code and user can text in to receive it. <br /><b>Join</b> - User
+                                            can only text in the keyword once to be added to the group.
+                                            <br /><b>Property (Real Estate)</b> - Perfect for realtors. Enter in all the
+                                            property details, and those details will be sent back to the prospective
+                                            buyer when they text in the keyword. <br /><b>Vehicle</b> - Perfect for car
+                                            dealers. Enter in all the vehicle details, and those details will be sent
+                                            back to the prospective buyer when they text in the keyword.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <select>
                                 <option>Please Select A Group Type</option>
                             </select>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Birthday</p>
+                            <div>
+                                <span style="font-weight: 600; ">Birthday SMS Wish</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>If you wish to capture birthdays for the purpose of sending out your birthday
+                                            SMS wishes, this will enable/disable it for this group. If enabled here and
+                                            under settings, a message will be sent back to the user to enter their birth
+                                            date after subscribing to this group and also send them your birthday SMS
+                                            wish.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
@@ -1123,19 +1192,61 @@
                             </div>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Message</p>
+                            <div>
+                                <span style="font-weight: 600; ">Message</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>
+                                        <ol style='padding-left:10px'>
+                                            <li>Include your business or program name.</li><br />
+                                            <li>Include number of messages that users will receive per month (Example:
+                                                'Get 5 msgs/month').</li><br />
+                                            <li>Include a link to your T&C/Privacy Policy or a number where they can
+                                                reach you at.</li><br />
+                                            <li>If you are going to be sending messages from an alphanumeric sender ID,
+                                                then you must offer your users the ability to opt out by writing to your
+                                                support team, calling your support phone line, or texting STOP to your
+                                                number. We recommend that you provide your users with a clear
+                                                description in your terms of services.</li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <textarea rows="4" cols="70"></textarea>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Mandatory Appended Message</p>
+                            <p style="font-weight: 600; ">Mandatory Appended Message</p>
                             <textarea rows="4" cols="70"></textarea>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">If Member Message</p>
+                            <div>
+                                <span style="font-weight: 600; ">If Member Message</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>This is the message that gets sent if someone who is already subscribed to
+                                            your list sends in the keyword again.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <textarea rows="4" cols="70"></textarea>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Double Opt-In</p>
+                            <div>
+                                <span style="font-weight: 600; ">Double Opt-In</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>Optionally make any sign-ups to this group double opt-in. When someone texts
+                                            in the keyword or signs up via the web-widget, a 2nd text will be sent to
+                                            them asking to confirm the sign-up.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
@@ -1144,7 +1255,18 @@
                             </div>
                         </div>
                         <div class="modal-group--body--field">
-                            <p style="font-weight: 600;">Notify Sign-Up</p>
+                            <div>
+                                <span style="font-weight: 600;  ">Notify Sign-Up</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>Have the option to be notified via SMS whenever someone subscribes to this
+                                            group. The notification will include the number that subscribed and the
+                                            group they subscribed to.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
@@ -1280,7 +1402,21 @@
                             </p>
                         </div>
                         <div class="modal-import--body--declaration">
-                            <p style="font-weight: 600;">Yes, these imported contacts are 100% opt-in.</p>
+                            <div>
+                                <span style="font-weight: 600; ">Yes, these imported contacts are 100% opt-in.</span>
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-circle-question" style="font-size: 1.4em;"></i>
+                                    <div class="dropdown-content">
+                                        <p>These contacts must be 100% opt-in and have already given permission to you
+                                            to receive SMS notifications. This import utility is intended to be used
+                                            when migrating over your list of opt-in contacts from another service or
+                                            collected from your website which clearly states why you're collecting phone
+                                            numbers. If importing contacts that are NOT opt-in, your account with us
+                                            will be banned.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-group--body--field--switch">
                                 <label class="switch">
                                     <input type="checkbox">
